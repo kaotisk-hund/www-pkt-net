@@ -11,9 +11,9 @@
           <template v-if="ns">
             <span class="c-common-button ns orange_bg"><img src="/img/common/icons/watch.svg" alt="time" />Time until next election: <strong>28 : 16 : 34</strong></span>
           </template>
-          <a :href="button_1_link" :target="button_1_target = button_1_target === '_blank' ? null : '_blank'" class="c-common-button c-common-button__filled" v-if="button_1"><span>{{ button_1 }}</span></a>
-          <a :href="button_2_link" :target="button_2_target = button_2_target === '_blank' ? null : '_blank'" class="c-common-button c-common-button__bordered" v-if="button_2"><span>{{ button_2 }}</span></a>
-          <a :href="button_3_link" :target="button_3_target = button_3_target === '_blank' ? null : '_blank'" class="c-common-button c-common-button__bordered" v-if="button_3"><span>{{ button_3 }}</span></a>
+          <a :href="button_1_link" :target="button_1_target" class="c-common-button c-common-button__filled" v-if="button_1"><span>{{ button_1 }}</span></a>
+          <a :href="button_2_link" :target="button_2_target" class="c-common-button c-common-button__bordered" v-if="button_2"><span>{{ button_2 }}</span></a>
+          <a :href="button_3_link" :target="button_3_target" class="c-common-button c-common-button__bordered" v-if="button_3"><span>{{ button_3 }}</span></a>
         </div>
       </div>
     </div>
@@ -36,9 +36,9 @@ export default {
     button_2_link: String,
     button_3_link: String,
     button_0_target: Boolean,
-    button_1_target: Boolean,
-    button_2_target: Boolean,
-    button_3_target: Boolean,
+    button_1_target: String,
+    button_2_target: String,
+    button_3_target: String,
     bg_img: String,
   }
 };
