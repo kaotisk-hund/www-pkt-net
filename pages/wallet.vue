@@ -82,7 +82,7 @@ export default {
           button_link: "https://apps.apple.com/us/app/anode-wallet/id1609509719",
         },
         {
-          bg_color: "background-color:#2B3991;background-image:url(/img/wallets-wallet-anode-vpn.webp);background-size:50%;",
+          bg_color: "background-color:#2B3991;background-image:url(/img/wallets-wallet-anode-vpn.svg);background-size:50%;",
           heading: "Android Mobile Wallet",
           title: "Anode VPN for Android",
           content: "Android mobile wallet that includes built-in PKT VPN app",
