@@ -8,8 +8,8 @@
       button_2="View wallet"
       button_1_link="https://packetscan.io/election"
       button_2_link="https://packetscan.io/address/pkt1q6hqsqhqdgqfd8t3xwgceulu7k9d9w5t2amath0qxyfjlvl3s3u4sjza2g2"
-      button_2_target=true
-      button_3_target=true />
+      button_2_target="_blank"
+      button_3_target="_blank" />
     </section>
     <!-- <section class="v-indicators-section">
       <div class="container">

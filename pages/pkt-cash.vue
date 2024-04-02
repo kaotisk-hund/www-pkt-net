@@ -1,90 +1,170 @@
 <template>
   <div class="v-cash">
-    <section class="v-cash-header-section">
-      <HeaderInternal
-      :title="this.$t('header.pkt_cash')" 
-      :subtitle="this.$t('pkt_cash.header_subtitle')" 
-      :text="this.$t('pkt_cash.header_text')"
-      :button_1="this.$t('header.cryptoeconomics')"
-      :button_1_link="localePath('cryptoeconomics')"
-      is_arrow_down 
-      arrow_down_link="#micro" />
+    <section class="v-header-section">
+      <SpotAInternal 
+      title="PKT Cash is currency for bandwidth"
+      text="Miners are paid in PKT by running the PacketCrypt proof-of-work. This delivers the economic incentive for miners to support the network and powers the PKT blockchain. The PKT Cash cryptocurrency is designed for microtransactions with near-instant settlement and near-zero gas fees. The intent is for PKT Cash to eventually power a decentralized bandwidth-trading marketplace." 
+       />
     </section>
-    <section class="v-cash-section__micro" id="micro">
-      <div class="container">
-        <h2 class="v-cash-section__micro__title">{{ $t("pkt_cash.micro_title") }}</h2>
-        <p class="v-cash-section__micro__text">{{ $t("pkt_cash.micro_text_1") }}</p>
-        <p class="v-cash-section__micro__text">{{ $t("pkt_cash.micro_text_2") }}</p>
-      </div>
-    </section>
-    <section class="v-cash-section__functions">
-      <div class="container">
-        <h2 class="v-cash-section__functions__title">{{ $t("pkt_cash.function_title") }}</h2>
-          <div class="v-cash-section__functions__row_first">
-            <div v-for="item of functions_first" class="v-cash-section__functions__item">
-              <template>
-                <div class="v-cash-section__functions__image">
-                  <img :src="item.image" :alt="item.name" />
-                </div>
-                <h5 class="v-cash-section__functions__title_small">{{ item.name }}</h5>
-                <p class="v-cash-section__functions__descr">{{ item.descr }}</p>
-              </template>
-            </div>
+    <!-- <section class="v-analytics-section">
+      <div class="c-analytics">
+        <div class="container">
+          <div class="c-analytics_data orange_bg">
+            <p class="c-analytics_data__value">{{ already_mined | displayed_stats_data | commafy }}</p>
+            <hr />
+            <h3 class="c-analytics_data__title">Coins Mined</h3>
           </div>
-          <div class="v-cash-section__functions__row_last">
-            <div v-for="item of functions_last" class="v-cash-section__functions__item">
-              <template>
-                <div class="v-cash-section__functions__image">
-                  <img :src="item.image" :alt="item.name" />
-                </div>
-                <h5 class="v-cash-section__functions__title_small">{{ item.name }}</h5>
-                <p class="v-cash-section__functions__descr">{{ item.descr }}</p>
-              </template>
-            </div>
+          <div class="c-analytics_data blue_bg">
+            <p class="c-analytics_data__value">6,000,000,000</p>
+            <hr />
+            <h3 class="c-analytics_data__title">Max Supply</h3>
           </div>
+          <div class="c-analytics_data green_bg">
+            <p class="c-analytics_data__value">60 sec</p>
+            <hr />
+            <h3 class="c-analytics_data__title">Blocktime</h3>
+          </div>
+        </div>
       </div>
+    </section> -->
+    <section class="v-simple-section">
+      <SimpleText :list="simple_block" />
     </section>
-    <section class="v-cash-section__halfed dark">
+    <section class="v-chess-section">
       <div class="container">
-        <div class="v-cash-section__halfed_left">
-          <h2 class="v-cash-section__halfed__title">{{ $t("pkt_cash.ts_title") }}</h2>
-          <p class="v-cash-section__halfed__text">{{ $t("pkt_cash.ts_descr") }}</p>
-        </div>
-        <div class="v-cash-section__halfed_right">
-          <img src="/img/pkt-tockenstrike.png" alt="Bandwidth Trading Marketplace" />
-        </div>
+        <h2>PKT Cash Use Cases</h2>
       </div>
+      <BlocksChessCommon :list="chess_list" />
     </section>
-    <section class="v-cash-section__halfed light">
-      <div class="container">
-        <h2 class="v-cash-section__halfed__title">{{ $t("pkt_cash.marketplace_title") }}</h2>
-        <div class="v-cash-section__halfed_left">
-          <p class="v-cash-section__halfed_left__text">{{ $t("pkt_cash.marketplace_text") }}</p>
-          <ol class="v-cash-section__halfed_left__list">
-            <li>{{ $t("pkt_cash.marketplace_list_1") }}</li>
-            <li>{{ $t("pkt_cash.marketplace_list_2") }}</li>
-            <li>{{ $t("pkt_cash.marketplace_list_3") }}</li>
-          </ol>
-        </div>
-        <div class="v-cash-section__halfed_right">
-          <img src="/img/cash-marketplace.png" alt="Bandwidth Trading Marketplace" />
-        </div>
-      </div>
+    <section class="v-index-section">
+      <JoinCommunity />
     </section>
   </div>
 </template>
 
 <script>
-import HeaderInternal from "~/components/Base/HeaderInternal";
-
+import SpotAInternal from "~/components/Common/SpotAInternal";
+import SimpleText from "~/components/Common/SimpleText";
+import BlocksChessCommon from "~/components/Common/BlocksChessCommon";
+import JoinCommunity from "~/components/Common/JoinCommunity";
+//import { mapFields } from "vuex-map-fields";
 export default {
   components: {
-    HeaderInternal,
+    SpotAInternal,
+    SimpleText,
+    BlocksChessCommon,
+    JoinCommunity
   },
+  // computed: {
+  //   ...mapFields("pkt-analytics", [
+  //     "already_mined",
+  //   ])
+  // },
+  data() {
+    return {
+      //timeout: null,
+      simple_block: [
+        {
+          single_title: "PKT Cash is a utility coin",
+          single_text: "PKT Cash is the fuel powering the PKT ecosystem. Utility includes payments for internet access, high speed VPN and e-commerce use cases. With PKT Lightning Network integration coming soon, website operators can build PKT Network websites and receive PKT payments directly to their IPv6 website URL. This eliminates the need for third party payment processors and delivers near-infinite transactions per second and near-instant settlement.",
+        }
+      ],
+      chess_list: [
+        {
+          text_direction: "text_left",
+          single_title: "PKT VPN",
+          single_descr: "PKT VPN uses peer-to-peer cjdns technology. It ensures a fully decentralized service, featuring end-to-end encrypted data transmission and connectivity. Leveraging the strengths of mesh networking, PKT VPN is a robust, trustless alternative to traditional VPN services, which also opens access to the PKT Network.",
+          single_url: "https://play.google.com/store/apps/details?id=co.anode.anodium.playstore",
+          single_link: "Learn more",
+          external: true,
+          single_img: "/img/pkt-cash-1.webp",
+        },
+        {
+          text_direction: "text_right",
+          single_title: "PKT Websites",
+          single_descr: "Anyone can host websites within the PKT Network using cjdns. All PKT websites are censorship-resistant and reachable within the PKT Network. Website hosts can also use a reverse-VPN feature so content is accessible from the public internet. PKT websites can use their IPv6 web URL as a PKT payment address for payment processing.",
+          single_url: "https://docs.pkt.cash/en/latest/cjdns_websites/",
+          external: true,
+          single_link: "Learn more",
+          single_img: "/img/pkt-cash-2.webp",
+        },
+        {
+          text_direction: "text_left",
+          single_title: "PacketCrypt",
+          single_descr: "PacketCrypt is the world’s first bandwidth-hard proof-of-work. Like all proof-of work-algorithms, PacketCrypt uses computational power to solve a mathematical problem. Uniquely, the PacketCrypt problem solving becomes easier when miners work together to solve it by sending data between each other, which requires bandwidth.",
+          single_url: "https://pkt.cash/PacketCrypt-2020-09-04.pdf",
+          external: true,
+          single_link: "Yellowpaper",
+          single_img: "/img/pkt-cash-3.webp",
+        },
+        {
+          text_direction: "text_right",
+          single_title: "TokenStrike",
+          single_descr: "TokenStrike is a forthcoming token standard that simplifies the issuing of cryptocurrency tokens. Each TokenStrike token supply will be its own blockchain, so transaction settlement is not dependent on the core PKT blockchain. This ensures limitless scalability and a foundation for supporting decentralized bandwidth trading marketplaces.",
+          single_url: "https://pkt.cash/PKT_Network_v1.0_2021.02.01.pdf",
+          external: true,
+          single_link: "Learn more",
+          single_img: "/img/pkt-cash-4.webp",
+        },
+        {
+          text_direction: "text_left",
+          single_title: "Bandwidth Marketplaces",
+          single_descr: "Roadmap development includes a DEX-like marketplace where decentralized internet operators (Cloud ISPs) can buy and sell tokens that represent bandwidth-leases. Cloud ISPs will acquire bandwidth leases and stitch together internet service infrastructure. Contributors (Edge Points) will sell bandwidth leases and monetize bandwidth.",
+          single_url: "https://pkt.cash/PKT_Network_v1.0_2021.02.01.pdf",
+          external: true,
+          single_link: "Whitepaper",
+          single_img: "/img/pkt-cash-1.webp",
+        }
+      ]
+    };
+  },
+  // filters: {
+  //   displayed_pkt_price(value) {
+  //     if (value > 0.01)
+  //       return (Number(value)).toFixed(2);
+  //     return (Number(value)).toFixed(4);
+  //   },
+  //   displayed_stats_data(value) {
+  //     return (Number(value) / 0x40000000).toFixed(0);
+  //   },
+  //   displayed_enc(value) {
+  //     return Math.round(value * 100) / 100;
+  //   },
+  //   displayed_kb(value) {
+  //     if (value > 1 << 30)
+  //       return `${parseFloat(value / 1073741824).toFixed(2)} Gb/s`;
+  //     if (value > 1 << 20)
+  //       return `${parseFloat(value / 1048576).toFixed(2)} Mb/s`;
+  //     if (value > 1 << 10)
+  //       return `${parseFloat(value / 1048576).toFixed(2)} Kb/s`;
+  //     return `${value} bits/s`;
+  //   },
+  //   commafy(value) {
+  //     return ("" + value).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  //   },
+  // },
+  // mounted() {
+  //   if (process.client) {
+  //     this.timeout = setInterval(
+  //       () => this.$store.dispatch("pkt-analytics/update_data"),
+  //       60 * 1000
+  //     );
+  //   }
+  // },
+  // beforeDestroy() {
+  //   clearInterval(this.timeout);
+  //   this.timeout = null;
+  // },
+  // async middleware({ store }) {
+  //   await store.dispatch('pkt-analytics/load')
+  // },
+  // async mounted() {
+  //   await this.$store.dispatch('pkt-analytics/load')
+  // },
   head() {
     return {
-      title: "PKT Cash",
-      meta: [{ hid: "description", name: "description", content: "Powering the PKT ecosystem" }],
+      title: "PKT Cash is currency for bandwidth - PKT",
+      meta: [{ hid: "description", name: "description", content: "PKT Cash is a proof-of-work mined community coin. Miners are paid in PKT when running PacketCrypt, which powers the physical infrastructure of the PKT Network. The PKT cryptocurrency is designed as payment rails for microtransactions with near-instant settlement and near-zero gas fees." }],
       link: [
         {
           rel: 'canonical',
@@ -93,403 +173,180 @@ export default {
       ]
     };
   },
-  data() {
-    return {
-      functions_first: [
-        {
-          name: this.$t("pkt_cash.function_1_name"),
-          descr: this.$t("pkt_cash.function_1_descr"),
-          image: "/img/cash-functions-reward.png",
-        },
-        {
-          name: this.$t("pkt_cash.function_2_name"),
-          descr: this.$t("pkt_cash.function_2_descr"),
-          image: "/img/cash-functions-vpn.png",
-        },
-        {
-          name: this.$t("pkt_cash.function_3_name"),
-          descr: this.$t("pkt_cash.function_3_descr"),
-          image: "/img/cash-functions-data.png",
-        },
-      ],
-      functions_last: [
-        {
-          name: this.$t("pkt_cash.function_4_name"),
-          descr: this.$t("pkt_cash.function_4_descr"),
-          image: "/img/cash-functions-ns.png",
-        },
-        {
-          name: this.$t("pkt_cash.function_5_name"),
-          descr: this.$t("pkt_cash.function_5_descr"),
-          image: "/img/cash-functions-vote.png",
-        },
-      ],
-    };
-  },
 };
 </script>
-
 <style lang="scss">
 .v-cash {
-  &-header-section {
-    & .c-internal-header {
-      @include for-width(-small-lg) {
-        height:100vh;
-      }
-      &__sub-title {
-        margin:rem(10) auto rem(25);
-      }
-      .arrow_down {
-        @include for-width(-small-lg) {
-          bottom: rem(20);
-        }
-      }
-      &__links {
-        margin-top:rem(50);
-          .button_new {
-            @include for-width(-small-lg) {
-              padding:rem(10) rem(35);
-              width:auto;
-              margin:0 auto;
-            }
-          }
-      }
-    }
+  background-color:$black_blue;
+  position:relative;
+  background-image:url(/img/pkt-cash-top.webp);
+  background-size:rem(800);
+  background-position:top right;
+  background-repeat:no-repeat;
+  @include for-width(-desktop-lg) {
+    background-size:rem(740);
   }
-  & .container {
-      @extend %container_new;
-      @include for-width(-tablet) {
-        max-width:100%;
-        width:100%;
-        padding:0 rem(25);
-        display:block;
-      }
-      @include for-width(-small-lg) {
-        padding:0 rem(20);
-      }
+  @include for-width(-desktop-medium-default) {
+    background-size:rem(650);
   }
-  &-section__micro {
-    background-color:$light_bg;
-    background-image:url(/img/cash-bg.jpg);
+  @include for-width(-tablet) {
+    background-position:top -275px right -150px;
+  }
+  @include for-width(-small-lg) {
+    background-position:top -225px right -200px;
+  }
+  &:before {
+    content:'';
+    background-image:url(/img/pkt-cash-bg-1.webp);
+    position:absolute;
+    top:7%;
+    right:0;
+    width:90%;
+    height:85%;
+    background-position:right top;
+    background-size:contain;
     background-repeat:no-repeat;
-    background-size:100% auto;
-    background-position:center bottom;
-    padding:rem(125) 0 rem(150);
-    margin-bottom:rem(100);
-    @extend %t-center;
-    @include for-width(-tablet-lg) {
-      padding:rem(100) 0 rem(85);
-      margin-bottom:rem(75);
-    }
+    z-index:1;
+  }
+  &:after {
+    content:'';
+    background-image:url(/img/pkt-cash-bg-2.webp);
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:80%;
+    height:70%;
+    background-position:left -50% bottom;
+    background-size:contain;
+    background-repeat:no-repeat;
+    z-index:1;
+  }
+  & > section {
+    z-index:3;
+    position:relative;
+  }
+  & .c-spot-a-internal {
     @include for-width(-small-lg) {
-      padding:rem(100) 0 rem(50);
-      margin-bottom:rem(50);
-    }
-    & .container {
-      @extend %container_new;
-      max-width:45%;
-      @include for-width(-tablet-lg) {
-        max-width:55%;
-      }
-      @include for-width(-tablet) {
-        max-width:75%;
-      }
-      @include for-width(-small-lg) {
-        max-width:100%;
-      }
-    }
-    &__title {
-      @extend %heading-gradient-dark;
-      @extend %heading_internal;
-      margin-bottom:rem(35);
-      @include for-width(-small-lg) {
-        font-size: rem(34);
-        line-height: rem(42);
-        margin-bottom:rem(15);
-      }
-    }
-    &__text {
-      @extend %pn;
-      margin-bottom:rem(25);
-      @include for-width(-small-lg) {
-        margin-bottom:rem(15);
-      }
+      padding:rem(120) 0 rem(70);
     }
   }
-  &-section__functions {
-    padding-bottom:rem(125);
-    @include for-width(-tablet-lg) {
-      padding-bottom:rem(100);
-    }
-    @include for-width(-small-lg) {
-      padding-bottom:rem(50);
-    }
-    & .container {
-      @extend %container_new;
-    }
-    &__title {
-      @extend %heading-gradient-dark;
-      @extend %heading_internal;
-      @extend %t-center;
-      max-width:50%;
-      margin:0 auto rem(75);
-      @include for-width(-tablet-lg) {
-        margin-bottom:rem(55);
-      }
-      @include for-width(-tablet) {
-        max-width:65%;
-      }
-      @include for-width(-small-lg) {
-        font-size: rem(36);
-        line-height: rem(42);
-        max-width:100%;
-        margin-bottom:rem(35);
-      }
-    }
-    &__item {
-      width:32%;
-      @include for-width(-small-lg) {
-        width:100%;
-      }
-    }
-    &__image {
-      background: $dark_blue_new;
-      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
-      border-radius: rem(18);
-      width:100%;
-      height:20vw;
-      padding:rem(10);
-      position:relative;
-      @include for-width(-small-lg) {
-        height:rem(200);
-      }
-      & img {
-        object-fit: contain;
-        max-height:80%;
-        max-width:65%;
-        @extend %centered_all;
-        @include for-width(-small-lg) {
-          max-height:75%;
-          max-width:60%;
+  & .v-simple-section {
+    & .c-common-simple {
+      & .container {
+        padding: rem(54) rem(115) rem(60);
+        @include for-width(-laptop) {
+          padding: rem(35) rem(100) rem(40);
         }
-      }
-    }
-    &__title_small {
-      @extend %heading-super-small;
-      margin:rem(25) 0 rem(10) rem(15);
-      @include for-width(-tablet) {
-        margin:rem(15) 0 rem(5) rem(15);
-      }
-      @include for-width(-small-lg) {
-        margin:rem(10) rem(15) rem(3);
-      }
-    }
-    &__descr {
-      @extend %pn;
-      margin:0 0 0 rem(15);
-      @include for-width(-small-lg) {
-        margin:0 rem(15) rem(35);
-      }
-    }
-    &__row_first {
-      @extend %df;
-      @extend %ais;
-      @extend %jcsb;
-      margin-bottom:rem(75);
-      @include for-width(-tablet-lg) {
-        margin-bottom:rem(55);
-      }
-      @include for-width(-small-lg) {
-        display:block;
-        margin-bottom:0;
-      }
-    }
-    &__row_last {
-      @extend %df;
-      @extend %ais;
-      @extend %jcsb;
-      @include for-width(-small-lg) {
-        display:block;
-      }
-      & .v-cash-section__functions__item {
-        width:49%;
-        @include for-width(-small-lg) {
-          width:100%;
-        }
-      }
-      & img {
-        max-height:70%;
-        max-width:65%;
-      }
-    }
-  }
-  &-section__halfed {
-    & .container {
-      @extend %container_new;
-    }
-    &__title {
-      @extend %heading-gradient-dark;
-      @extend %heading_internal;
-      margin-bottom:rem(35);
-      @include for-width(-tablet) {
-        margin-bottom:rem(15);
-      }
-      @include for-width(-small-lg) {
-        font-size: rem(36);
-        line-height: rem(42);
-      }
-    }
-    &__text {
-      @extend %pn;
-    }
-    &_left {
-      @extend %t-left;
-      width:48%;
-      @include for-width(-tablet-lg) {
-        width:50%;
-      }
-      @include for-width(-tablet) {
-        width:55%;
-      }
-      @include for-width(-small-lg) {
-        width:100%;
-      }
-      &__text {
-        @extend %pn;
-      }
-      &__list {
-        margin:rem(25) 0 rem(25) rem(20);
-        list-style: auto;
         @include for-width(-tablet) {
-          margin:rem(20) 0 rem(20) rem(15);
+          padding: rem(35) rem(50) rem(40);
         }
-        & li {
-          @extend %pn;
-          display:list-item;
-          list-style: auto;
-          margin-bottom:0;
-          list-style-position: outside;
+        @include for-width(-small-lg) {
+          padding: rem(35);
         }
       }
     }
-    &_right {
-      @include for-width(-tablet-lg) {
-        width:50%;
-      }
+  }
+  & .v-analytics-section {
+    & .c-analytics {
+      padding-bottom:rem(125);
       @include for-width(-small-lg) {
-        width:100%;
-      }
-    }
-    &.dark {
-      background-color:$dark_blue_new;
-      background-image:url(/img/cash-tockenstrike-bg.png);
-      background-repeat:no-repeat;
-      background-size:55% 100%;
-      background-position:center right;
-      padding:rem(175) 0;
-      @include for-width(-tablet-lg) {
-        padding:rem(100) 0;
-      }
-      @include for-width(-tablet) {
-        padding:rem(65) 0;
-        background-size:65% 100%;
-      }
-      @include for-width(-small-lg) {
-        background-size:cover;
-        padding:rem(65) 0 rem(55);
+        padding-bottom:0;
       }
       & .container {
         @extend %df;
-        @extend %aic;
         @extend %jcsb;
+        @extend %fw;
         @include for-width(-small-lg) {
           display:block;
+          padding-bottom:rem(90);
         }
       }
-      & .v-cash-section__halfed__title {
-        @extend %heading-gradient-light;
-      }
-      & .v-cash-section__halfed__text {
-        color:$white;
-      }
-      & .v-cash-section__halfed_right {
-        @extend %t-right;
+      &_data {
+        width:32%;
+        border-radius: rem(20);
+        padding:rem(30);
+        @extend %t-center;
+        @include for-width(-desktop-med) {
+          padding:rem(30) rem(10);
+        }
+        @include for-width(-tablet) {
+          width:100%;
+          margin-bottom:rem(20);
+        }
         @include for-width(-small-lg) {
-          text-align:center;
+          padding:rem(20);
         }
-        & img {
-          width:55%;
-          margin-right:rem(50);
-          @include for-width(-tablet-lg) {
-            width:60%;
-          }
-          @include for-width(-tablet) {
-            width:65%;
+        &__value {
+          color:$black_blue;
+          @extend %h2-common;
+          @include for-width(-laptop_small) {
+            font-size: rem(36);
+            line-height: rem(46);
           }
           @include for-width(-small-lg) {
-            width:75%;
-            margin:0 auto;
+            font-size: rem(30);
+            line-height: rem(36);
           }
+        }
+        & hr {
+          background-color:$black_blue;
+          border:0;
+          width:rem(120);
+          height:rem(1);
+          padding:0;
+          margin:rem(20) auto rem(22);
+          @include for-width(-small-lg) {
+            display:none;
+          }
+        }
+        &__title {
+          color:$black_blue;
+          font-size: rem(16);
+          line-height: rem(24);
+          @extend %inter_semibold;
         }
       }
     }
-    &.light {
-      padding:rem(100) 0;
-      @include for-width(-tablet-lg) {
-        padding:rem(75) 0;
-      }
-      @include for-width(-tablet) {
-        padding:rem(65) 0;
-      }
+  }
+  & .v-chess-section {
+    padding-top:rem(175);
+    @include for-width(-tablet-lg) {
+      padding-top:rem(125);
+    }
+    @include for-width(-small-lg) {
+      padding-top:rem(100);
+    }
+    & h2 {
+      @extend %h2-common;
+      @extend %t-center;
+      margin-bottom:rem(100);
       @include for-width(-small-lg) {
-        padding:rem(50) 0;
+        margin-bottom:rem(85);
+        text-align:left;
+        max-width:rem(220);
       }
-      & .v-cash-section__halfed__title {
-        max-width:60%;
-        @include for-width(-tablet) {
-          max-width:80%;
-        }
+    }
+    & .c-chess-block {
+      & .text_left .c-chess-block_inner_single {
+        padding-right:0;
         @include for-width(-small-lg) {
-          max-width:100%;
-          text-align:center;
-        }
-      }
-      & .v-cash-section__halfed_left {
-        display:inline-block;
-        width:49%;
-        vertical-align:middle;
-        padding-right:rem(100);
-        @include for-width(-tablet-lg) {
-          padding-right:rem(50);
-        }
-        @include for-width(-tablet) {
-          padding-right:rem(15);
-        }
-        @include for-width(-small-lg) {
-          display:block;
-          width:100%;
-          padding-right:0;
+          text-wrap: pretty;
         }
       }
-      & .v-cash-section__halfed_right {
-        display:inline-block;
-        width:50%;
-        vertical-align:middle;
-        @extend %t-center;
-        @include for-width(-tablet) {
-          vertical-align:top;
-        }
+      & .text_right .c-chess-block_inner_single {
+        padding-left:0;
         @include for-width(-small-lg) {
-          display:block;
-          width:100%;
+          text-wrap: pretty;
         }
-        & img {
-          width:100%;
-          @include for-width(-small-lg) {
-            width:75%;
-            margin:rem(20) auto 0;
-          }
+      }
+      &_inner_single_img {
+        img {
+          border-radius:rem(20);
         }
+      }
+      & .c-common-button {
+        min-width:rem(175);
+        width:auto;
       }
     }
   }

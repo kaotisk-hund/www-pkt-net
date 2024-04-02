@@ -6,7 +6,7 @@
 				<h4 class="c-community-blocks_single_inner__title">{{ item.block_title }}</h4>
 				<p class="c-community-blocks_single_inner__descr">{{ item.block_descr }}</p>
 			</div>
-			<a :href="item.block_url" target="_blank" class="c-community-blocks_single__url c-common-button c-common-button__filled">Learn more</a>
+			<a :href="item.block_url" target="_blank" class="c-community-blocks_single__url c-common-button c-common-button__filled">{{ $t("common.learn_more") }}</a>
 		</div>
 	</template>
 	</div>
