@@ -241,7 +241,7 @@ export default {
 </script>
 <style lang="scss">
 .v-index {
-  background-color: $black_blue;
+  background-color: #00042c;
   &:before {
     content:'';
     background-image:url(/img/home/home-assets.webp);

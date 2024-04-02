@@ -224,14 +224,14 @@ export default {
               name:"header.cryptoeconomics",
               route_link: "/cryptoeconomics",
             },
-            // {
-            //   name:"Cjdns",
-            //   route_link: "/cjdns",
-            // },
             {
               name:"Cjdns",
-              route_link: "/origin-story",
+              route_link: "/cjdns",
             },
+            // {
+            //   name:"Cjdns",
+            //   route_link: "/origin-story",
+            // },
           ]
         },
         {
