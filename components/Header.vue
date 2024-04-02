@@ -146,14 +146,14 @@ export default {
               name:"header.utility",
               route_link: "/utility",
             },
-            // {
-            //   name:"home.scroll_section_block_1_title",
-            //   route_link: "/pkt-network",
-            // },
             {
               name:"home.scroll_section_block_1_title",
-              route_link: "/tech",
+              route_link: "/pkt-network",
             },
+            // {
+            //   name:"home.scroll_section_block_1_title",
+            //   route_link: "/tech",
+            // },
             {
               name:"header.pkt_cash",
               route_link: "/pkt-cash",
@@ -170,14 +170,14 @@ export default {
           route_link: "/build",
           dropdown: true,
           children: [
-            // {
-            //   name:"header_new.dev_dev_center",
-            //   route_link: "/developer-central",
-            // },
             {
               name:"header_new.dev_dev_center",
-              route_link: "/resources",
+              route_link: "/developer-central",
             },
+            // {
+            //   name:"header_new.dev_dev_center",
+            //   route_link: "/resources",
+            // },
             {
               name:"header_new.dev_tech_docs",
               route_link: "https://docs.pkt.cash/",
