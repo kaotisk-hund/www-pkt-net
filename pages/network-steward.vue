@@ -2,10 +2,10 @@
   <div class="v-network-steward">
     <section class="v-header-section">
       <SpotAInternal 
-      title="Network Steward Governance and Grants"
-      text="The Network Steward is a wallet address that earns 20% from every mined block to fund the ongoing development of the PKT Network. The custodian of the Network Steward wallet is democratically elected weekly by proof-of-stake voting."
-      button_1="View voting" 
-      button_2="View wallet"
+      :title="this.$t('steward.steward_title')"
+      :text="this.$t('steward.steward_text')"
+      :button_1="this.$t('steward.steward_button_1')"
+      :button_2="this.$t('steward.steward_button_2')"
       button_1_link="https://packetscan.io/election"
       button_2_link="https://packetscan.io/address/pkt1q6hqsqhqdgqfd8t3xwgceulu7k9d9w5t2amath0qxyfjlvl3s3u4sjza2g2"
       button_2_target="_blank"
@@ -45,38 +45,38 @@
       <div class="container">
         <div class="v-charter-section__inner">
           <div class="v-charter-section__inner_left">
-            <h2>The Network Steward Charter</h2>
-            <a href="https://github.com/pkt-cash/ns-projects" target="_blank" class="c-common-button c-common-button__filled"><span>Learn more</span></a>
+            <h2>{{ $t("steward.steward_charter_title") }}</h2>
+            <a href="https://github.com/pkt-cash/ns-projects" target="_blank" class="c-common-button c-common-button__filled"><span>{{ $t("common.learn_more") }}</span></a>
           </div>
           <div class="v-charter-section__inner_right">
-            <p>The Network Steward is designed to give all PKT community members a say in the network governance. Using a proof-of-stake voting system, a weekly election determines the Network Steward. In order for a candidate to remain the Network Steward, they must be re-elected every week. This current governance mechanism is live beta.</p>
-            <p>The objective of the Network Steward is for the network to self fund the development of the roadmap, network maintenance and community growth. The community should elect candidates that are motivated to benefit the project and whose agenda is deemed beneficial by the majority of the electorate. Historically, the Network Steward has had 129,600 blocks (approximately 3 months) to deploy the oldest coins in the wallet or those coins are burned. To date, more than 14% of the mined coins have been burned. The new governance system better ensures the Network Steward funds are purposefully deployed to support the PKT project and network.</p>
-            <a href="https://github.com/pkt-cash/ns-projects" target="_blank" class="c-common-button c-common-button__filled"><span>Learn more</span></a>
+            <p>{{ $t("steward.steward_charter_inner_1") }}</p>
+            <p>{{ $t("steward.steward_charter_inner_2") }}</p>
+            <a href="https://github.com/pkt-cash/ns-projects" target="_blank" class="c-common-button c-common-button__filled"><span>{{ $t("common.learn_more") }}</span></a>
           </div>
         </div>
       </div>
     </section>
     <section class="v-grants-section">
       <div class="container">
-        <h2>Project Grants</h2>
+        <h2>{{ $t("steward.steward_grants_title") }}</h2>
         <div class="v-grants-section__inner">
           <div class="v-grants-section_data">
             <img class="v-grants-section_data__img" src="/img/common/icons/pkt-vpn.svg" alt="PKT x VPN" />
-            <h5 class="v-grants-section_data__title">PKT x VPN</h5>
-            <p class="v-grants-section_data__text">This project is to build VPN infrastructure that powers the PKT Network and leverages cjdns exit nodes for VPN access points.</p>
+            <h5 class="v-grants-section_data__title">{{ $t("steward.steward_grants_data_title_1") }}</h5>
+            <p class="v-grants-section_data__text">{{ $t("steward.steward_grants_data_text_1") }}</p>
           </div>
           <div class="v-grants-section_data">
             <img class="v-grants-section_data__img" src="/img/common/icons/pkt-ts.svg" alt="PKT x TokenStrike" />
-            <h5 class="v-grants-section_data__title">PKT x TokenStrike</h5>
-            <p class="v-grants-section_data__text">Developing a protocol for the issuance of tokens, where token supply is its own blockchain. This ensures limitless scalability of the PKT ecosystem.</p>
+            <h5 class="v-grants-section_data__title">{{ $t("steward.steward_grants_data_title_2") }}</h5>
+            <p class="v-grants-section_data__text">{{ $t("steward.steward_grants_data_text_2") }}</p>
           </div>
           <div class="v-grants-section_data">
             <img class="v-grants-section_data__img" src="/img/common/icons/pkt-nlnet.svg" alt="PKT x NLnet" />
-            <h5 class="v-grants-section_data__title">PKT x NLnet</h5>
-            <p class="v-grants-section_data__text">NLnet is a not-for-profit philanthropic organization providing micro-grants towards projects deemed relevant for the PKT ecosystem.</p>
+            <h5 class="v-grants-section_data__title">{{ $t("steward.steward_grants_data_title_3") }}</h5>
+            <p class="v-grants-section_data__text">{{ $t("steward.steward_grants_data_text_3") }}</p>
           </div>
         </div>
-        <a href="https://github.com/pkt-cash/ns-projects" target="_blank" class="c-common-button c-common-button__filled"><span>View Github</span></a>
+        <a href="https://github.com/pkt-cash/ns-projects" target="_blank" class="c-common-button c-common-button__filled"><span>{{ $t("steward.steward_grants_link") }}</span></a>
       </div>
     </section>
     <section class="v-simple-section">
@@ -109,8 +109,8 @@ export default {
     return {
       governance: [
         {
-          single_title: "Governance By the Community",
-          single_text: "It is the belief of the PKT founding community members that any unaccountable authority, no matter how benevolent, will eventually fall victim to corruption, inefficiency or simple failure to innovate. To solve this, PKT holders elect the Network Steward on a weekly basis. Voters can choose to delegate their vote so another party votes on their behalf.",
+          single_title: this.$t("steward.steward_governance_title"),
+          single_text: this.$t("steward.steward_governance_text"),
         }
       ],
     };
