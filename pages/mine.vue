@@ -1,12 +1,12 @@
 <template>
   <div class="v-mining">
     <section class="v-header-section">
-      <SpotAInternal 
-      title="How to mine PKT"
-      text="The PKT Network is powered by miners who run PacketCrypt, the world’s first and only bandwidth-hard, proof of work, mining algorithm. PacketCrypt economically incentivizes miners to collaborate, operate and grow the fully decentralized PKT Network. Mining has never been easier. Get started today." 
-      button_1="Get a Mining Wallet" 
-      button_2="Download Minr"
-      button_3="Read Docs"
+      <SpotAInternal
+      :title="this.$t('mine.mine_title')"
+      :text="this.$t('mine.mine_text')"
+      :button_1="this.$t('mine.mine_button_1')"
+      :button_2="this.$t('mine.mine_button_2')"
+      :button_3="this.$t('mine.mine_button_3')"
       button_1_link="/wallet"
       button_2_link="https://pkt.watch/minr/"
       button_3_link="https://docs.pkt.cash/"
@@ -23,28 +23,29 @@
       <div class="container">
         <div class="v-block-links-section__inner">
           <div class="v-block-links-section__single dark_blue_bg">
-            <div><h3 class="v-block-links-section__title">Start PKT mining</h3>
-            <p class="v-block-links-section__descr">View PKT mining instructions, requirements, and FAQ related to using a PKT mining app. Or install PacketCrypt directly from Github.</p></div>
-            <nuxt-link class="c-common-button c-common-button__bordered c-common-button__dark_blue" to="/setup">
+            <div><h3 class="v-block-links-section__title">{{ $t("mine.mine_links_title_1") }}</h3>
+            <p class="v-block-links-section__descr">{{ $t("mine.mine_links_text_1") }}</p></div>
+            <!-- <nuxt-link class="c-common-button c-common-button__bordered c-common-button__dark_blue" to="/setup">
               <span>Get started</span>
-            </nuxt-link>
+            </nuxt-link> -->
+            <a href="https://docs.pkt.cash/en/latest/pktd/" target="_blank" class="c-common-button c-common-button__bordered c-common-button__dark_blue"><span>{{ $t("mine.mine_links_link_1") }}</span></a>
           </div>
           <div class="v-block-links-section__single green_bg">
-            <div><h3 class="v-block-links-section__title">Blockchain Explorer</h3>
-            <p class="v-block-links-section__descr">View PKT blocks, pools, transactions, addresses, balances, network steward wallet and more.</p></div>
-            <a href="https://packetscan.io/" target="_blank" class="c-common-button c-common-button__bordered c-common-button__dark_blue"><span>View explorer</span></a>
+            <div><h3 class="v-block-links-section__title">{{ $t("mine.mine_links_title_2") }}</h3>
+            <p class="v-block-links-section__descr">{{ $t("mine.mine_links_text_2") }}</p></div>
+            <a href="https://packetscan.io/" target="_blank" class="c-common-button c-common-button__bordered c-common-button__dark_blue"><span>{{ $t("mine.mine_links_link_2") }}</span></a>
           </div>
         </div>
         <div class="v-block-links-section__inner">
           <div class="v-block-links-section__single orange_bg">
-            <div><h3 class="v-block-links-section__title">Setup a PKT mining pool</h3>
-            <p class="v-block-links-section__descr">PKT mining pools require technical operators with substantial bandwidth and processing infrastructure to validate blocks.</p></div>
-            <a href="https://docs.pkt.cash/en/latest/mining/pool_setup_guide/" target="_blank" class="c-common-button c-common-button__bordered c-common-button__dark_blue"><span>Learn more</span></a>
+            <div><h3 class="v-block-links-section__title">{{ $t("mine.mine_links_title_3") }}</h3>
+            <p class="v-block-links-section__descr">{{ $t("mine.mine_links_text_3") }}</p></div>
+            <a href="https://docs.pkt.cash/en/latest/mining/pool_setup_guide/" target="_blank" class="c-common-button c-common-button__bordered c-common-button__dark_blue"><span>{{ $t("mine.mine_links_link_3") }}</span></a>
           </div>
           <div class="v-block-links-section__single blue_bg">
-            <div><h3 class="v-block-links-section__title">Install a PKT miner</h3>
-            <p class="v-block-links-section__descr">Begin PKT mining using the PKT World wallet or with the Minr app for MacOS, Linux or Windows.</p></div>
-            <a href="https://docs.pkt.cash/en/latest/mining/" target="_blank" class="c-common-button c-common-button__bordered c-common-button__dark_blue"><span>Read docs</span></a>
+            <div><h3 class="v-block-links-section__title">{{ $t("mine.mine_links_title_4") }}</h3>
+            <p class="v-block-links-section__descr">{{ $t("mine.mine_links_text_4") }}</p></div>
+            <a href="https://docs.pkt.cash/en/latest/mining/" target="_blank" class="c-common-button c-common-button__bordered c-common-button__dark_blue"><span>{{ $t("mine.mine_links_link_4") }}</span></a>
           </div>
         </div>
       </div>
@@ -67,22 +68,22 @@ export default {
       chess_list: [
         {
           text_direction: "text_right",
-          single_title: "Why Mine PKT?",
-          single_subtitle: "Mining is the backbone of the PKT Network",
-          single_descr: "Mining requires bandwidth and CPU power, which encrypts the network and establishes its high speed data infrastructure. When PKT Lightning Network launches, its near-infinite transactions per second and near-instantaneous settlement will make PKT one of the highest throughput blockchains in the world.",
+          single_title: this.$t("mine.mine_chess_title_1"),
+          single_subtitle: this.$t("mine.mine_chess_subtitle_1"),
+          single_descr: this.$t("mine.mine_chess_descr_1"),
           single_url: "/pkt-cash",
           external: false,
-          single_link: "Learn more",
+          single_link: this.$t("common.learn_more"),
           single_img: "/img/mine/mine-1.webp",
         },
         {
           text_direction: "text_left",
-          single_title: "How to Mine PacketCrypt?",
-          single_subtitle: "Bandwidth + CPU",
-          single_descr: "PacketCrypt can be easily mined from any CPU powered device. PKT mining pools are community powered and require significant bandwidth resources. Miners and PKT mining pools are incentivized to collaborate, which decentralizes the network infrastructure and propagates the network.",
+          single_title: this.$t("mine.mine_chess_title_2"),
+          single_subtitle: this.$t("mine.mine_chess_subtitle_2"),
+          single_descr: this.$t("mine.mine_chess_descr_2"),
           single_url: "https://docs.pkt.cash/en/latest/",
           external: true,
-          single_link: "Read docs",
+          single_link: this.$t("mine.mine_links_link_4"),
           single_img: "/img/mine/mine-2.webp",
         }
       ]
