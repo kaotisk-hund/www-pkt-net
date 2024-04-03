@@ -2,8 +2,8 @@
   <div class="v-cash">
     <section class="v-header-section">
       <SpotAInternal 
-      title="PKT Cash is currency for bandwidth"
-      text="Miners are paid in PKT by running the PacketCrypt proof-of-work. This delivers the economic incentive for miners to support the network and powers the PKT blockchain. The PKT Cash cryptocurrency is designed for microtransactions with near-instant settlement and near-zero gas fees. The intent is for PKT Cash to eventually power a decentralized bandwidth-trading marketplace." 
+      :title="this.$t('pkt_cash.cash_title')"
+      :text="this.$t('pkt_cash.cash_text')"
        />
     </section>
     <!-- <section class="v-analytics-section">
@@ -32,7 +32,7 @@
     </section>
     <section class="v-chess-section">
       <div class="container">
-        <h2>PKT Cash Use Cases</h2>
+        <h2>{{ $t("pkt_cash.cash_chess_title") }}</h2>
       </div>
       <BlocksChessCommon :list="chess_list" />
     </section>
@@ -65,54 +65,54 @@ export default {
       //timeout: null,
       simple_block: [
         {
-          single_title: "PKT Cash is a utility coin",
-          single_text: "PKT Cash is the fuel powering the PKT ecosystem. Utility includes payments for internet access, high speed VPN and e-commerce use cases. With PKT Lightning Network integration coming soon, website operators can build PKT Network websites and receive PKT payments directly to their IPv6 website URL. This eliminates the need for third party payment processors and delivers near-infinite transactions per second and near-instant settlement.",
+          single_title: this.$t("pkt_cash.cash_simple_title"),
+          single_text: this.$t("pkt_cash.cash_simple_text"),
         }
       ],
       chess_list: [
         {
           text_direction: "text_left",
-          single_title: "PKT VPN",
-          single_descr: "PKT VPN uses peer-to-peer cjdns technology. It ensures a fully decentralized service, featuring end-to-end encrypted data transmission and connectivity. Leveraging the strengths of mesh networking, PKT VPN is a robust, trustless alternative to traditional VPN services, which also opens access to the PKT Network.",
+          single_title: this.$t("pkt_cash.cash_chess_title_1"),
+          single_descr: this.$t("pkt_cash.cash_chess_descr_1"),
           single_url: "https://play.google.com/store/apps/details?id=co.anode.anodium.playstore",
-          single_link: "Learn more",
+          single_link: this.$t("common.learn_more"),
           external: true,
           single_img: "/img/pkt-cash-1.webp",
         },
         {
           text_direction: "text_right",
-          single_title: "PKT Websites",
-          single_descr: "Anyone can host websites within the PKT Network using cjdns. All PKT websites are censorship-resistant and reachable within the PKT Network. Website hosts can also use a reverse-VPN feature so content is accessible from the public internet. PKT websites can use their IPv6 web URL as a PKT payment address for payment processing.",
+          single_title: this.$t("pkt_cash.cash_chess_title_2"),
+          single_descr: this.$t("pkt_cash.cash_chess_descr_2"),
           single_url: "https://docs.pkt.cash/en/latest/cjdns_websites/",
           external: true,
-          single_link: "Learn more",
+          single_link: this.$t("common.learn_more"),
           single_img: "/img/pkt-cash-2.webp",
         },
         {
           text_direction: "text_left",
-          single_title: "PacketCrypt",
-          single_descr: "PacketCrypt is the world’s first bandwidth-hard proof-of-work. Like all proof-of work-algorithms, PacketCrypt uses computational power to solve a mathematical problem. Uniquely, the PacketCrypt problem solving becomes easier when miners work together to solve it by sending data between each other, which requires bandwidth.",
+          single_title: this.$t("pkt_cash.cash_chess_title_3"),
+          single_descr: this.$t("pkt_cash.cash_chess_descr_3"),
           single_url: "https://pkt.cash/PacketCrypt-2020-09-04.pdf",
           external: true,
-          single_link: "Yellowpaper",
+          single_link: this.$t("header_new.dev_yellowpaper"),
           single_img: "/img/pkt-cash-3.webp",
         },
         {
           text_direction: "text_right",
-          single_title: "TokenStrike",
-          single_descr: "TokenStrike is a forthcoming token standard that simplifies the issuing of cryptocurrency tokens. Each TokenStrike token supply will be its own blockchain, so transaction settlement is not dependent on the core PKT blockchain. This ensures limitless scalability and a foundation for supporting decentralized bandwidth trading marketplaces.",
+          single_title: this.$t("pkt_cash.cash_chess_title_4"),
+          single_descr: this.$t("pkt_cash.cash_chess_descr_4"),
           single_url: "https://pkt.cash/PKT_Network_v1.0_2021.02.01.pdf",
           external: true,
-          single_link: "Learn more",
+          single_link: this.$t("common.learn_more"),
           single_img: "/img/pkt-cash-4.webp",
         },
         {
           text_direction: "text_left",
-          single_title: "Bandwidth Marketplaces",
-          single_descr: "Roadmap development includes a DEX-like marketplace where decentralized internet operators (Cloud ISPs) can buy and sell tokens that represent bandwidth-leases. Cloud ISPs will acquire bandwidth leases and stitch together internet service infrastructure. Contributors (Edge Points) will sell bandwidth leases and monetize bandwidth.",
+          single_title: this.$t("pkt_cash.cash_chess_title_5"),
+          single_descr: this.$t("pkt_cash.cash_chess_descr_5"),
           single_url: "https://pkt.cash/PKT_Network_v1.0_2021.02.01.pdf",
           external: true,
-          single_link: "Whitepaper",
+          single_link: this.$t("header.whitepaper"),
           single_img: "/img/pkt-cash-1.webp",
         }
       ]
