@@ -175,18 +175,19 @@ export default {
           route_link: "https://pkt.cash/PacketCrypt-2020-09-04.pdf",
           external: true,
         },
-        // {
-        //   name: "header.roadmap",
-        //   route_link: "/roadmap",
-        // },
         {
           name: "header.roadmap",
-          route_link: "/build#roadmap",
+          route_link: "/roadmap",
         },
         // {
-        //   name: "Yellowpaper",
-        //   route_link: "/",
+        //   name: "header.roadmap",
+        //   route_link: "/build#roadmap",
         // },
+        {
+          name: "Yellowpaper",
+          route_link: "https://pkt.cash/PacketCrypt-2020-09-04.pdf",
+          external: true,
+        },
         {
           name: "header.whitepaper",
           route_link: "https://pkt.cash/PKT_Network_v1.0_2021.02.01.pdf",

@@ -183,14 +183,14 @@ export default {
               route_link: "https://docs.pkt.cash/",
               external: true
             },
-            // {
-            //   name:"header.roadmap",
-            //   route_link: "/roadmap",
-            // },
             {
               name:"header.roadmap",
-              route_link: "/build",
+              route_link: "/roadmap",
             },
+            // {
+            //   name:"header.roadmap",
+            //   route_link: "/build",
+            // },
             {
               name:"header_new.dev_yellowpaper",
               route_link: "https://pkt.cash/PacketCrypt-2020-09-04.pdf",
