@@ -2,5 +2,17 @@
     {
         "from": "/cash/",
         "to": "/pkt/"
+    },
+    {
+        "from": "/build",
+        "to": "/roadmap"
+    },
+    {
+        "from": "/origin-story",
+        "to": "/cjdns"
+    },
+    {
+        "from": "/resources",
+        "to": "/developer-central"
     }
   ]
