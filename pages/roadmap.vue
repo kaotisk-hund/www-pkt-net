@@ -427,6 +427,7 @@ export default {
 .v-roadmap {
   background-color:$black_blue;
   position:relative;
+  overflow-y:hidden;
   &:before {
     content:'';
     background-image:url(/img/roadmap-layer-top.webp);

@@ -8,7 +8,7 @@
           <a href="https://www.mexc.com/exchange/PKT_USDT" target="_blank" class="c-common-button c-common-button__filled">
             <span>{{ $t("header.get_pkt") }}</span>
           </a>
-          <nuxt-link class="c-common-button c-common-button__bordered" to="/build">
+          <nuxt-link class="c-common-button c-common-button__bordered" to="/roadmap">
             <span>{{ $t("header.roadmap") }}</span>
           </nuxt-link>
         </div>
@@ -34,14 +34,14 @@
       <div class="container">
         <div class="v-asymetrical-section__heading">
           <h2>{{ $t("home_new.asymetrical_heading") }}</h2>
-          <nuxt-link class="c-common-button c-common-button__filled" to="/tech">
+          <nuxt-link class="c-common-button c-common-button__filled" to="/developer-central">
             <span>{{ $t("common.learn_more") }}</span>
           </nuxt-link>
         </div>
         <div class="v-asymetrical-section__inner">
           <BlockAsymmetrical :listFirst="asymetrical_block_list" :listSecond="asymetrical_block_list_second" />
         </div>
-        <nuxt-link class="c-common-button c-common-button__filled mobile_only" to="/build">
+        <nuxt-link class="c-common-button c-common-button__filled mobile_only" to="/roadmap">
           <span>{{ $t("common.learn_more") }}</span>
         </nuxt-link>
       </div>
