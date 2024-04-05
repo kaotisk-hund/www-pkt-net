@@ -92,8 +92,7 @@
                           <div class="v-phases__inner__content__scope_single_list"><img :src="project.icon" :alt="project.title" v-if="project.icon" /></div>
                           <div class="v-phases__inner__content__scope_single_text">
                             <h5>{{ project.title }}</h5>
-                            <p>{{ project.descr }}</p>
-                            <p v-if="project.descr_2">{{ project.descr_2 }}</p>
+                            <p>{{ project.descr }} <span v-if="project.descr_2">{{ project.descr_2 }}</span></p>
                           </div>
                         </div>
                       </template>
@@ -173,9 +172,9 @@ export default {
           description: "PKT evolved from the cjdns mesh networking project, which was created by Caleb James DeLisle circa 2011. With the emergence of Bitcoin’s Lightning Network in 2016, Caleb realized it could be possible to process microtransaction payments for bandwidth. Caleb created the PacketCrypt proof-of-work in 2019, and launched the PKT blockchain mainnet on August 20, 2019 (Paris Time).",
           description_2: "The Launch era focused on establishing PKT’s decentralized infrastructure. This included unifying around PacketCrypt’s bandwidth-hard mining algorithm and fostering community growth. Major developments during this era included multiple PKT wallets, the PKT block explorer, the PKT.Cash website, OTC trading app, and funding the first projects via the Network Steward.",
           title_1: "Projects Completed",
-          title_2: "Months to Completion",
+          title_2: "Duration of Phase",
           title_3: "Decimations",
-          pr_completed: "21",
+          pr_completed: "15",
           months_completion: "20",
           decimations: "6",
           work_scope: true,
@@ -265,9 +264,9 @@ export default {
           description_3: "The Utility era also saw the launch of many new community-run apps and services. This included the launch of the PKT VPN, Route Server for processing network traffic, simplified mining app called Minr, a WPKT bridge to Binance Smart Chain, new exchange listings, and the first Edge Point nodes helping people get online via mesh networking.",
           description_4: "The Utility era was just the beginning of the network’s real-world utility, setting the stages for bigger developments in the future Scale and Innovate eras.",
           title_1: "Projects Completed",
-          title_2: "Months to Completion",
+          title_2: "Duration of Phase",
           title_3: "Decimations",
-          pr_completed: "17",
+          pr_completed: "18",
           months_completion: "18",
           decimations: "5",
           work_scope: true,
@@ -373,12 +372,12 @@ export default {
           description_3: "This Scale era also aims to make the internet globally accessible through mesh networking, bypassing traditional ISP connections. It's important that non-technical users and local governments can easily set up hardware antennas for internet sharing. This functionality is already possible, but there is a need for a free, user-friendly app interface to facilitate it.",
           description_4: "The Scale era will expand the PKT blockchain’s foundational features. Most notably with the introduction of PKT Lightning for near-instant payment processing and TokenStrike for handling multi-currency ledgers. TokenStrike is expected to foster the development of new cryptocurrencies and decentralized exchanges within the PKT ecosystem. TokenStrike is uniquely designed so that each new cryptocurrency operates on its own blockchain, ensuring interoperability without burdening the main PKT chain. This approach will support both fungible and non-fungible tokens, such as for bandwidth leasing.",
           description_5: "Additionally, the inclusion of smart contract functionality is anticipated. This can be achieved by adapting Stacks, a Layer 2 solution for Bitcoin that offers smart contract programming, further expanding PKT’s utility.",
-          title_1: "Nodes in Hyperboris",
-          title_2: "Links in Hyperboria",
-          title_3: "Last updated",
-          pr_completed: "332",
-          months_completion: "734",
-          decimations: "30sec",
+          title_1: "Projects Completed",
+          title_2: "Duration of Phase",
+          title_3: "Decimations",
+          pr_completed: "6",
+          months_completion: "3",
+          decimations: "3",
           work_scope: true,
           work_scope_items: [
             {
@@ -395,6 +394,54 @@ export default {
               icon: "/img/roadmap/network-steward-voting-app.webp",
               title: "PKT Voter App",
               descr: "PKT Voter was developed as graphical interface that enables PKT wallet holders to vote using Electorium. This innovative application facilitates the voting process, allowing PKT holders to exercise their rights and influence over the network's direction and stewardship decisions. Its creation underscores the community's commitment to democratic principles and decentralized governance. This ensures that the development and allocation of resources within the PKT Network are aligned with the will of the majority of the voters.",
+            },
+            {
+              icon: "/img/roadmap/yunohost-website-builder.webp",
+              title: "Yunohost Website Builder",
+            },
+            {
+              icon: "/img/roadmap/pkt-world-wallet.webp",
+              title: "PKT Pay",
+            },
+            {
+              icon: "/img/roadmap/paid-vpn.webp",
+              title: "Paid VPN",
+            },
+            {
+              icon: "/img/roadmap/pkt-vpn-desktop-app.webp",
+              title: "PKT VPN Desktop App",
+            },
+            {
+              icon: "/img/roadmap/pkt-network-web-hosting.webp",
+              title: "PKT Network Web Hosting",
+            },
+            {
+              icon: "/img/roadmap/wifi-sharing-hardware.webp",
+              title: "PKT DNS",
+            },
+            {
+              icon: "/img/roadmap/stacks-integration.webp",
+              title: "Stacks Integration",
+            },
+            {
+              icon: "/img/roadmap/ordinals-integration.webp",
+              title: "Ordinals Integration",
+            },
+            {
+              icon: "/img/roadmap/network-steward-voting-app.webp",
+              title: "PKT Search",
+            },
+            {
+              icon: "/img/roadmap/pkt-network-web-hosting.webp",
+              title: "PKT Network Hotspot Map",
+            },
+            {
+              icon: "/img/roadmap/ipv6-pkt-wallet-link.webp",
+              title: "PKT TV",
+            },
+            {
+              icon: "/img/roadmap/token-strike.webp",
+              title: "TokenStrike",
             }
           ]
         },
@@ -825,7 +872,7 @@ export default {
               }
               & p {
                 @extend %p-common-thick;
-                color:$white_50;
+                // color:$white_50;
               }
             }
           }
