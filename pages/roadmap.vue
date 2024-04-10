@@ -383,65 +383,82 @@ export default {
             {
               icon: "/img/roadmap/wifi-sharing-hardware.webp",
               title: "Wifi Sharing Hardware",
-              descr: "Option 1: In order to the scale global connectivity, the PKT Network needs compatible wifi hotspot hardware for internet sharing. Community member-company Routie.io has developed the first hardware antennas, called Edge Extenders, that work as internet guest wifi access points into the PKT Network. This technology has been made open source so it can now be incorporated into third party hardware.",
+              descr: "Option 1: In order to scale global internet sharing, the PKT Network needs compatible wifi hotspot hardware. Community member-company Routie.io has developed the first hardware antennas, called Edge Extenders. These antennas work as guest wifi access points. While Routie sells its antennas, this technology is open source so it can now be incorporated into third party hardware.",
             },
             {
               icon: "/img/roadmap/governance-system-update.webp",
               title: "Electorium - Network Steward Governance Update",
-              descr: "Electorium is an update to the Network Steward governance system. This system updates the network rules that previously required over 50% of the mined PKT to vote to change who is Network Steward. The new system enables anyone to become a candidate when elected with over 50% of the electorate votes. Any wallet can simply cast one vote with their address and the entire balance of that address is then considered to be voting. If a vote goes for someone who does not wish to be a candidate, their vote is delegated to whoever they vote for. If a candidate explicitly votes for themself, their vote is the same as indicating their candidacy without voting at all. The Electorium algorithm has been implemented in Rust and Golang both and has received extensive fuzz testing to verify correctness. To fully Electorium, it will require a soft fork to occur later in 2024. A new election for who becomes Network Steward is automatically held every 7 days. Recognizing the importance of community input and governance, this update was crafted to empower network participants with a greater voice for the project’s evolution. By enhancing the governance structure, the PKT Network aims for a more inclusive, responsive, and decentralized ecosystem.",
+              descr: "Electorium is an update to the Network Steward governance system. Recognizing the importance of community input and governance, this update was crafted to empower network participants with a more inclusive, responsive, and decentralized ecosystem. Previously, the Network Steward rules required votes from more than 50% of the mined PKT to change who is Network Steward. However, the vote count failed to account for burned coins. This new system enables anyone to become a candidate when elected with over 50% of the electorate. Now, any wallet can vote by proof-of-stake, using their wallet address and the entire wallet balance. If a vote goes for someone who does not wish to be a candidate, their vote is delegated to whoever they vote for. If a candidate explicitly votes for themself, their vote is the same as indicating their candidacy. A new election for who becomes Network Steward is automatically held every 7 days. The Electorium algorithm is implemented in Rust and Golang and has received extensive fuzz testing to verify correctness. To fully realize Electorium, it will require a soft fork, which is planned for later in 2024.",
             },
             {
               icon: "/img/roadmap/network-steward-voting-app.webp",
               title: "PKT Voter App",
-              descr: "PKT Voter was developed as graphical interface that enables PKT wallet holders to vote using Electorium. This innovative application facilitates the voting process, allowing PKT holders to exercise their rights and influence over the network's direction and stewardship decisions. Its creation underscores the community's commitment to democratic principles and decentralized governance. This ensures that the development and allocation of resources within the PKT Network are aligned with the will of the majority of the voters.",
+              descr: "PKT Voter was developed as a graphical interface for Electorium, which enables PKT wallet holders to vote proof-of-stake. This application facilitates the voting process, allowing PKT holders to vote the balance of their wallet, without transmitting any PKT during voting. The PKT Voter app underscores the community's commitment to democratic principles, decentralized governance and ensures that the development and allocation of resources within the PKT Network are aligned with the will of the majority of the voters.",
             },
             {
               icon: "/img/roadmap/yunohost-website-builder.webp",
-              title: "Yunohost Website Builder",
-            },
-            {
-              icon: "/img/roadmap/pkt-world-wallet.webp",
-              title: "PKT Pay",
-            },
-            {
-              icon: "/img/roadmap/paid-vpn.webp",
-              title: "Paid VPN",
-            },
-            {
-              icon: "/img/roadmap/pkt-vpn-desktop-app.webp",
-              title: "PKT VPN Desktop App",
+              title: "PKT Website Builder",
+              descr: "Option 1:  The PKT website builder is designed to simplify the web development process in the PKT Network. Using a user-friendly website building tools aim to lower the barriers to entry to receive an IPv6 web URL and create a peer-to-peer hosted website using cjdns. Cjdns websites populate and expand the PKT Network. Recognizing the challenge that non-technical users face in the digital space, the PKT website building enables users to launch a censorship-resistant wordpress website in the PKT Network."
             },
             {
               icon: "/img/roadmap/pkt-network-web-hosting.webp",
               title: "PKT Network Web Hosting",
+              descr: "A web hosting platform is being built to further simplify setting up cjdns websites in the PKT Network. This web hosting platform will enable users to rent a virtual private server (VPS) with Wordpress pre-installed. Users will be able to pay using PK Cash for the VPS. Users will also be able to choose if the website is only accessible peer-to-peer within the PKT Network, or uses a reverse VPN so the website is accessible from traditional web browsers. Leveraging the PKT blockchain's infrastructure, this PKT Network web hosting offers an alternative to traditional web hosting services, ensuring greater resilience, privacy and security. By decentralizing the hosting process, PKT Network Web Hosting empowers users to maintain control over their online presence while contributing to the growth and decentralization of the PKT ecosystem. This project is under active development."
             },
             {
-              icon: "/img/roadmap/wifi-sharing-hardware.webp",
+              icon: "/img/roadmap/zulu-wallet.webp",
+              title: "PKT Pay",
+              descr: "PKT Pay is a tool being developed to be a streamlined, multi-currency payment solution within the PKT ecosystem. Since websites built in the PKT Network can use their IPv6 web URL as a PKT payment address, there is a need for seamless transactions between users, merchants, and service providers. PKT Pay is aimed to be a user-friendly payment gateway that enhances the usability and adoption of PKT Cash. Merchants using PKT Pay will be able to accept payment for goods and services in various different cryptocurrencies, such as Bitcoin, or Ethereum, or fiat currency such as credit card. This project is currently in a research phase."
+            },
+            {
+              icon: "/img/roadmap/paid-vpn.webp",
+              title: "Paid VPN",
+              descr: "PKT VPN is designed as a free, decentralized VPN service that operates within the PKT Network. Paid VPN is an under-development feature within the PKT VPN app that enables users to pay for faster speeds. Instead of a subscription-based model, Paid VPN offers users premium VPN services on a pay-per-use basis. The value exchange occurs between the user VPN exit provider. This project is under active development."
+            },
+            {
+              icon: "/img/roadmap/pkt-vpn-desktop-app.webp",
+              title: "PKT VPN Desktop App",
+              descr: "PKT VPN was initially developed as a free-to-use Android app, with an integrated PKT wallet. To expand PKT VPN’s utility and usability, it is now being developed as a desktop app for Windows and MacOS operating systems. Initially this desktop app will only feature PKT VPN, with no wallet. This desktop app can help expand user access to the PKT Network and increase utility of the network. This project is currently in a research phase."
+            },
+            {
+              icon: "/img/roadmap/exchange-listings.webp",
               title: "PKT DNS",
+              descr: "Developing a DNS (Domain Name System) for PKT would leverage the mesh network infrastructure to map domain names to cjdns IP addresses. This setup would ensure that DNS requests are secure, private, and resistant to censorship. By distributing DNS services across multiple nodes, the PKT Network can ensure that web address lookups are efficient, resilient to attacks, and free from centralized control, embodying the network's ethos of decentralization and privacy. This project is currently in a research phase."
             },
             {
               icon: "/img/roadmap/stacks-integration.webp",
               title: "Stacks Integration",
+              descr: "Option 1: Smart contract functionality is a key milestone in diversifying the utility of the PKT Network. This includes supporting DeFi, decentralized bandwidth trading marketplaces, RWAs (real world assets), colored coins, NFTs, and decentralized media distribution. Since PKT is a clone of the btcd Bitcoin codebase, it’s possible to fork Stacks, which is Bitcoin’s Layer 2 solution. This will deliver PKT a robust smart contract platform with advanced functionality. This integration aims to expand the capabilities of PKT, fostering innovation and enabling developers to build decentralized applications (dApps) and smart contracts that further drive adoption and diverse use cases for the PKT ecosystem. This project is currently in a research phase."
             },
             {
               icon: "/img/roadmap/ordinals-integration.webp",
               title: "Ordinals Integration",
+              descr: "Ordinal technology involves inscribing arbitrary data onto individual satoshis, effectively turning them into unique, identifiable, and transferable digital artifacts. Since PKT uses the same codebase as Bitcoin, it is possible to inscribe onto nPKTs, opening up avenues for incorporating unique, traceable, and potentially valuable digital assets directly into its ecosystem. This technology can be used for tokenized assets such as RWAs (real world assets), digital collectibles, NFTs, digital identity credentials, and DeFi innovations. This project is currently in a research phase."
             },
             {
-              icon: "/img/roadmap/network-steward-voting-app.webp",
+              icon: "/img/roadmap/pkt-world-explorer.webp",
               title: "PKT Search",
+              descr: "PKT Network is its own sovereign network within the larger internet. Websites built in the PKT Network are accessible peer-to-peer within the network, or can be reached from traditional web browsers using a reverse VPN service. PKT Network will need its own efficient search engine so users can search websites within the PKT ecosystem. This will offer users a reliable and decentralized method for discovering content and information within PKT’s decentralized web. This project is currently in a research phase."
             },
             {
-              icon: "/img/roadmap/pkt-network-web-hosting.webp",
-              title: "PKT Network Hotspot Map",
+              icon: "/img/roadmap/gridnode.webp",
+              title: "Wifi Access Point Hotspot Map",
+              descr: "PKT Network wifi access points are distributed across the world. Creating a hotspot map will help visualize the distribution of network nodes and be a tool for users to locate nearby hotspots and network infrastructure. By showcasing the global distribution of PKT nodes, a hotspot map will provide valuable insights into the network's reach. This can also facilitate the expansion efforts for global wifi access points. This project is currently in a research phase."
             },
             {
-              icon: "/img/roadmap/ipv6-pkt-wallet-link.webp",
+              icon: "/img/roadmap/pkt-electrum-wallet.webp",
+              title: "PKT Hub",
+              descr: "PKT Network is built to support decentralized media distribution. PKT Hub is a decentralized media platform that is accessible through the PKT Network. PKT Hub enables media companies and content creators to host next gen, library app/channels through which media content can be distributed. Netflix, Hulu and HBO are examples of legacy library apps. PKT Hub functions like Roku, but enables anyone to launch a library app/channels. Content can be accessible via subscription, or pay-per-view. Library app owners will not pay any platform fees. Library apps will have the ability to use traditional payment processing services, or PKT Pay. This project is currently in a research phase."
+            },
+            {
+              icon: "/img/roadmap/pkt-watch-website.webp",
               title: "PKT TV",
+              descr: "PKT TV originated from the vision of creating a decentralized media platform within the PKT ecosystem. PKT TV will be available as a library app within PKT Hub. Designed to offer viewers access to a diverse range of content, including feature films, and TV shows, PKT TV provides a decentralized media alternative to traditional media distributors and platforms. By leveraging PKT's decentralized infrastructure and integrated payment rails, PKT TV will have no platform fees or distribution fees. This ensures all revenue reaches the talent and investors that create the content. This project is currently in a research phase."
             },
             {
               icon: "/img/roadmap/token-strike.webp",
               title: "TokenStrike",
+              descr: "TokenStrike will become PKT’s token issuance protocol, similar to ERC-20 for Ethereum. Conceived as a solution to enable multi-currency ledger functionality within the PKT ecosystem, what makes TokenStrike unique is each token supply is its own blockchain. This ensures that token pairs are horizontally transmutable, but issuance and transaction validation does not congest the network for maximizing scalability. TokenStrike is designed to make it possible to issue tokens and NTFs with near-zero cost. This functionality is required so Edge Points can easily tokenize bandwidth and trade tokens in a decentralized bandwidth trading marketplace (PKT Dex). TokenStrike enables atomic swaps using nominal PKT Lightning Network integration. TokenStrike will empower users to tokenize assets, conduct cross-chain transactions, and unlock new possibilities for DeFi applications. TokenStrike development is currently paused while sourcing a new, reliable development team."
             }
           ]
         },
