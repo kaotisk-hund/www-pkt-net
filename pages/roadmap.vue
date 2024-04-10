@@ -375,30 +375,30 @@ export default {
           title_1: "Projects Completed",
           title_2: "Months of Phase",
           title_3: "Decimations",
-          pr_completed: "6",
-          months_completion: "3",
+          pr_completed: "5",
+          months_completion: "6",
           decimations: "3",
           work_scope: true,
           work_scope_items: [
             {
               icon: "/img/roadmap/wifi-sharing-hardware.webp",
               title: "Wifi Sharing Hardware",
-              descr: "Option 1: In order to scale global internet sharing, the PKT Network needs compatible wifi hotspot hardware. Community member-company Routie.io has developed the first hardware antennas, called Edge Extenders. These antennas work as guest wifi access points. While Routie sells its antennas, this technology is open source so it can now be incorporated into third party hardware.",
+              descr: "In order to scale global internet sharing, the PKT Network needs compatible wifi hotspot hardware. Community member-company Routie.io has developed the first hardware antennas, called Edge Extenders. These antennas work as guest wifi access points. While Routie sells its antennas, this technology is open source so it can now be incorporated into third party hardware. This project is complete.",
             },
             {
               icon: "/img/roadmap/governance-system-update.webp",
               title: "Electorium - Network Steward Governance Update",
-              descr: "Electorium is an update to the Network Steward governance system. Recognizing the importance of community input and governance, this update was crafted to empower network participants with a more inclusive, responsive, and decentralized ecosystem. Previously, the Network Steward rules required votes from more than 50% of the mined PKT to change who is Network Steward. However, the vote count failed to account for burned coins. This new system enables anyone to become a candidate when elected with over 50% of the electorate. Now, any wallet can vote by proof-of-stake, using their wallet address and the entire wallet balance. If a vote goes for someone who does not wish to be a candidate, their vote is delegated to whoever they vote for. If a candidate explicitly votes for themself, their vote is the same as indicating their candidacy. A new election for who becomes Network Steward is automatically held every 7 days. The Electorium algorithm is implemented in Rust and Golang and has received extensive fuzz testing to verify correctness. To fully realize Electorium, it will require a soft fork, which is planned for later in 2024.",
+              descr: "Electorium is an update to the Network Steward governance system. Recognizing the importance of community input and governance, this update was crafted to empower network participants with a more inclusive, responsive, and decentralized ecosystem. Previously, the Network Steward rules required votes from more than 50% of the mined PKT to change who is Network Steward. However, the vote count failed to account for burned coins. This new system enables anyone to become a candidate when elected with over 50% of the electorate. Phase 1 enables anyone to vote by proof-of-stake, using the wallet balance of a wallet address. If a vote goes for someone who does not wish to be a candidate, their vote is delegated to whoever they vote for. If a candidate explicitly votes for themself, their vote is the same as indicating their candidacy. A new election for who becomes Network Steward is automatically held every 7 days. The Electorium algorithm is implemented in Rust and Golang and has received extensive fuzz testing to verify correctness. Phase 2 of Electorium will enable the winning candidate to automatically receive the NS blockchain payments to the winning wallet address. Phase 2 will require a soft fork, which is planned for later in 2024 or early 2025. Phase 1 of this project is complete.",
             },
             {
               icon: "/img/roadmap/network-steward-voting-app.webp",
               title: "PKT Voter App",
-              descr: "PKT Voter was developed as a graphical interface for Electorium, which enables PKT wallet holders to vote proof-of-stake. This application facilitates the voting process, allowing PKT holders to vote the balance of their wallet, without transmitting any PKT during voting. The PKT Voter app underscores the community's commitment to democratic principles, decentralized governance and ensures that the development and allocation of resources within the PKT Network are aligned with the will of the majority of the voters.",
+              descr: "PKT Voter was developed as a graphical interface for Electorium, which enables PKT wallet holders to vote proof-of-stake. This application facilitates the voting process, allowing PKT holders to vote the balance of their wallet, without transmitting any PKT during voting. The PKT Voter app underscores the community's commitment to democratic principles, decentralized governance and ensures that the development and allocation of resources within the PKT Network are aligned with the will of the majority of the voters. This project is complete.",
             },
             {
               icon: "/img/roadmap/yunohost-website-builder.webp",
               title: "PKT Website Builder",
-              descr: "Option 1:  The PKT website builder is designed to simplify the web development process in the PKT Network. Using a user-friendly website building tools aim to lower the barriers to entry to receive an IPv6 web URL and create a peer-to-peer hosted website using cjdns. Cjdns websites populate and expand the PKT Network. Recognizing the challenge that non-technical users face in the digital space, the PKT website building enables users to launch a censorship-resistant wordpress website in the PKT Network."
+              descr: "The PKT website builder is designed to simplify the web development process in the PKT Network. Using a user-friendly website building tools aim to lower the barriers to entry to receive an IPv6 web URL and create a peer-to-peer hosted website using cjdns. Cjdns websites populate and expand the PKT Network. Recognizing the challenge that non-technical users face in the digital space, the PKT website building enables users to launch a censorship-resistant wordpress website in the PKT Network. This project is complete."
             },
             {
               icon: "/img/roadmap/pkt-network-web-hosting.webp",
@@ -406,14 +406,14 @@ export default {
               descr: "A web hosting platform is being built to further simplify setting up cjdns websites in the PKT Network. This web hosting platform will enable users to rent a virtual private server (VPS) with Wordpress pre-installed. Users will be able to pay using PK Cash for the VPS. Users will also be able to choose if the website is only accessible peer-to-peer within the PKT Network, or uses a reverse VPN so the website is accessible from traditional web browsers. Leveraging the PKT blockchain's infrastructure, this PKT Network web hosting offers an alternative to traditional web hosting services, ensuring greater resilience, privacy and security. By decentralizing the hosting process, PKT Network Web Hosting empowers users to maintain control over their online presence while contributing to the growth and decentralization of the PKT ecosystem. This project is under active development."
             },
             {
+              icon: "/img/roadmap/paid-vpn.webp",
+              title: "Paid VPN",
+              descr: "PKT VPN is designed as a free, decentralized VPN service that operates within the PKT Network. Paid VPN has been successfully demo’d and enables users to pay for faster VPN speeds. Instead of a subscription-based model, Paid VPN offers users premium VPN services on a pay-per-use basis. The value exchange occurs between the user and the VPN exit provider. Phase 1 is completed. Phase 2 of implementing Paid VPN into PKT VPN for public use is under-development."
+            },
+            {
               icon: "/img/roadmap/zulu-wallet.webp",
               title: "PKT Pay",
               descr: "PKT Pay is a tool being developed to be a streamlined, multi-currency payment solution within the PKT ecosystem. Since websites built in the PKT Network can use their IPv6 web URL as a PKT payment address, there is a need for seamless transactions between users, merchants, and service providers. PKT Pay is aimed to be a user-friendly payment gateway that enhances the usability and adoption of PKT Cash. Merchants using PKT Pay will be able to accept payment for goods and services in various different cryptocurrencies, such as Bitcoin, or Ethereum, or fiat currency such as credit card. This project is currently in a research phase."
-            },
-            {
-              icon: "/img/roadmap/paid-vpn.webp",
-              title: "Paid VPN",
-              descr: "PKT VPN is designed as a free, decentralized VPN service that operates within the PKT Network. Paid VPN is an under-development feature within the PKT VPN app that enables users to pay for faster speeds. Instead of a subscription-based model, Paid VPN offers users premium VPN services on a pay-per-use basis. The value exchange occurs between the user VPN exit provider. This project is under active development."
             },
             {
               icon: "/img/roadmap/pkt-vpn-desktop-app.webp",
@@ -428,7 +428,7 @@ export default {
             {
               icon: "/img/roadmap/stacks-integration.webp",
               title: "Stacks Integration",
-              descr: "Option 1: Smart contract functionality is a key milestone in diversifying the utility of the PKT Network. This includes supporting DeFi, decentralized bandwidth trading marketplaces, RWAs (real world assets), colored coins, NFTs, and decentralized media distribution. Since PKT is a clone of the btcd Bitcoin codebase, it’s possible to fork Stacks, which is Bitcoin’s Layer 2 solution. This will deliver PKT a robust smart contract platform with advanced functionality. This integration aims to expand the capabilities of PKT, fostering innovation and enabling developers to build decentralized applications (dApps) and smart contracts that further drive adoption and diverse use cases for the PKT ecosystem. This project is currently in a research phase."
+              descr: "Smart contract functionality is a key milestone in diversifying the utility of the PKT Network. This includes supporting DeFi, decentralized bandwidth trading marketplaces, RWAs (real world assets), colored coins, NFTs, and decentralized media distribution. Since PKT is a clone of the btcd Bitcoin codebase, it’s possible to fork Stacks, which is Bitcoin’s Layer 2 solution. This will deliver PKT a robust smart contract platform with advanced functionality. This integration aims to expand the capabilities of PKT, fostering innovation and enabling developers to build decentralized applications (dApps) and smart contracts that further drive adoption and diverse use cases for the PKT ecosystem. This project is currently in a research phase."
             },
             {
               icon: "/img/roadmap/ordinals-integration.webp",
