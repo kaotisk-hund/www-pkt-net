@@ -3,9 +3,9 @@
     <div class="container">
       <div class="c-footer__wrap">
         <div class="c-footer__logo">
-          <nuxt-link :to="localePath('index')" class="c-footer__logo-img">
+          <a :href="localePath('index')" title="PKT Cash" class="c-footer__logo-img">
             <img src="/img/logo.svg" alt="pkt.cash" />
-          </nuxt-link>
+          </a>
           <ul class="c-footer__logo_social">
             <li v-for="(item, index) of social_links" :key="index" class="c-footer__menu-item">
               <a :href="item.route_link" target="_blank" class="c-footer__menu-link">

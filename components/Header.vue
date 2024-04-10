@@ -4,9 +4,9 @@
     <nav class="c-navigation">
         <div class="nav__logo">
           <div class="nav__logo">
-            <nuxt-link :to="localePath('index')">
+            <a :href="localePath('index')" title="PKT Cash">
               <img src="/img/logo-new.svg" alt="PKT Cash" />
-            </nuxt-link>
+            </a>
           </div>
         </div>
         <div class="nav__menu">
