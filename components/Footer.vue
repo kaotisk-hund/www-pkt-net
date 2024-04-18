@@ -152,8 +152,7 @@ export default {
         },
         {
           name: "home.scroll_section_block_1_title",
-          route_link: "https://pkt.cash/PKT_Network_v1.0_2021.02.01.pdf",
-          external: true,
+          route_link: "/pkt-network",
         },
         {
           name: "header.pkt_cash",
