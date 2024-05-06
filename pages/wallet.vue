@@ -172,6 +172,11 @@ export default {
     z-index:3;
     position:relative;
   }
+  & .c-spot-a-internal {
+    @include for-width(-small-lg) {
+      padding:rem(165) 0 rem(50);
+    }
+  }
   .v-watchr-section {
     padding-top:rem(10);
     padding-bottom:rem(35);
