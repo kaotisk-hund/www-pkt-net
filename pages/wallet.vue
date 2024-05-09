@@ -11,6 +11,12 @@
       button_2_link="https://pkt.watch/watchr/"
       button_2_target="_blank" />
     </section>
+    <section id="wallets" class="v-wallet-section">
+      <div class="container">
+        <Wallets :list="pkt_wallets" />
+        <Wallets :list="mining_wallets" />
+      </div>
+    </section>
     <section class="v-watchr-section">
       <div class="container">
         <div class="v-watchr-section_img">
@@ -22,12 +28,6 @@
           <p>Watchr enables you to get insights and track any wallet address using the mobile or desktop app.</p>
           <a href="https://pkt.watch/watchr/" target="_blank" class="c-common-button c-common-button__white"><span>Install Watchr</span></a>
         </div>
-      </div>
-    </section>
-    <section id="wallets" class="v-wallet-section">
-      <div class="container">
-        <Wallets :list="pkt_wallets" />
-        <Wallets :list="mining_wallets" />
       </div>
     </section>
   </div>
@@ -173,15 +173,19 @@ export default {
     position:relative;
   }
   & .c-spot-a-internal {
+    padding-bottom:0;
     @include for-width(-small-lg) {
-      padding:rem(165) 0 rem(50);
+      padding:rem(165) 0 rem(25);
     }
   }
   .v-watchr-section {
     padding-top:rem(10);
-    padding-bottom:rem(35);
+    padding-bottom:rem(100);
     @include for-width(-tablet) {
       padding:0 rem(25);
+    }
+    @include for-width(-small-lg) {
+      padding:0 rem(25) rem(75);
     }
     & .container {
       background-image:url(/img/wallets-watchr-bg.webp);
@@ -276,8 +280,8 @@ export default {
   .v-wallet-section {
     padding-bottom:rem(120);
     @include for-width(-small-lg) {
-      padding-bottom:rem(145);
-      padding-top:rem(70);
+      padding-bottom:rem(75);
+      padding-top:0;
     }
   }
   .c-footer {
