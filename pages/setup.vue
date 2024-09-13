@@ -30,7 +30,7 @@ export default {
       link: [
         {
           rel: 'canonical',
-          href: 'https://pkt.cash' + this.$route.path
+          href: 'https://pkt.net' + this.$route.path
         }
       ]
     };

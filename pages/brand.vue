@@ -5,7 +5,7 @@
     </section>
     <section class="v-brand-section">
 		<div class="container">
-			<p class="v-brand-section__text">{{ $t("brand.download_assets") }} <a href="https://pkt.cash/PKT-brand-assets-logos.zip">{{ $t("brand.here") }}</a>.</p>
+			<p class="v-brand-section__text">{{ $t("brand.download_assets") }} <a href="https://pkt.net/PKT-brand-assets-logos.zip">{{ $t("brand.here") }}</a>.</p>
 			<p class="v-brand-section__text">{{ $t("brand.see_trademark") }} <a :href="localePath('trademark')">{{ $t("brand.here") }}.</a></p>
 		</div>
     </section>
@@ -26,7 +26,7 @@ export default {
       link: [
         {
           rel: 'canonical',
-          href: 'https://pkt.cash' + this.$route.path
+          href: 'https://pkt.net' + this.$route.path
         }
       ]
     };

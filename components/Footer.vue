@@ -4,7 +4,7 @@
       <div class="c-footer__wrap">
         <div class="c-footer__logo">
           <a :href="localePath('index')" title="PKT Cash" class="c-footer__logo-img">
-            <img src="/img/logo.svg" alt="pkt.cash" />
+            <img src="/img/logo.svg" alt="pkt.net" />
           </a>
           <ul class="c-footer__logo_social">
             <li v-for="(item, index) of social_links" :key="index" class="c-footer__menu-item">
@@ -15,7 +15,7 @@
           </ul>
           <div class="c-footer__text">
             <span class="c-footer__text-light">
-              <a href="https://github.com/cjdelisle/CJDNS-contact" target="_blank" class="c-footer__menu-link">
+              <a href="https://github.com/orgs/PKT-Net-Foundation" target="_blank" class="c-footer__menu-link">
                 ©{{currentYear}} PKT Cash | {{ $t("footer.policy") }}
               </a>
             </span>
@@ -91,14 +91,14 @@
         </div>
         <div class="c-footer__text c-footer__text_mobile_only">
           <span class="c-footer__text-light">
-            <a href="https://github.com/cjdelisle/CJDNS-contact" target="_blank" class="c-footer__menu-link">
+            <a href="https://github.com/orgs/PKT-Net-Foundation" target="_blank" class="c-footer__menu-link">
               ©{{currentYear}} PKT Cash | {{ $t("footer.policy") }}
             </a>
           </span>
         </div>
       </div>
     </div>
-    <a href="https://pkt.cash/sitemap.xml"></a>
+    <a href="https://pkt.net/sitemap.xml"></a>
   </footer>
 </template>
 
@@ -110,9 +110,9 @@ export default {
       nav_open: false,
       currentYear: new Date().getFullYear(),
       social_links: [
-        {
+        /*{
           name: "pkt.chat",
-          route_link: "https://pkt.chat",
+          route_link: "https://pkt.net",
           img: "/img/common/icons/pkt-chat.svg",
         },
         {
@@ -129,15 +129,15 @@ export default {
           name: "Twitter",
           route_link: "https://twitter.com/pktcash",
           img: "/img/common/icons/x.svg",
-        },
+        },*/
         {
           name: "Discord",
-          route_link: "https://discord.gg/bjJutHm9CN",
+          route_link: "https://discord.gg/QVWsq5mGSz",
           img: "/img/common/icons/discord.svg",
         },
         {
           name: "Github",
-          route_link: "https://github.com/pkt-cash/",
+          route_link: "https://github.com/PKT-Net-Foundation/",
           img: "/img/common/icons/github.svg",
         }
       ],
@@ -157,21 +157,22 @@ export default {
         {
           name: "header.pkt_cash",
           route_link: "/pkt-cash",
-        },
+        }
+        //,
         // {
         //   name: "FAQ",
         //   route_link: "/faq",
         // },
-        {
-          name: "PKT Deck",
-          route_link: "https://docsend.com/view/ayf5d3tz5rymn8fv",
-          external: true,
-        }
+        //{
+        //  name: "PKT Deck",
+        //  route_link: "https://docsend.com/view/ayf5d3tz5rymn8fv",
+        //  external: true,
+        //}
       ],
       develop_links: [
         {
           name: "footer_new.tech_docs",
-          route_link: "https://pkt.cash/PacketCrypt-2020-09-04.pdf",
+          route_link: "https://pkt.net/PacketCrypt-2020-09-04.pdf",
           external: true,
         },
         {
@@ -184,12 +185,12 @@ export default {
         // },
         {
           name: "Yellowpaper",
-          route_link: "https://pkt.cash/PacketCrypt-2020-09-04.pdf",
+          route_link: "https://pkt.net/PacketCrypt-2020-09-04.pdf",
           external: true,
         },
         {
           name: "header.whitepaper",
-          route_link: "https://pkt.cash/PKT_Network_v1.0_2021.02.01.pdf",
+          route_link: "https://pkt.net/PKT_Network_v1.0_2021.02.01.pdf",
           external: true,
         }
       ],
@@ -213,7 +214,7 @@ export default {
         },
         {
           name: "Cjdns",
-          route_link: "https://github.com/cjdelisle/cjdns",
+          route_link: "https://github.com/orgs/PKT-Net-Foundation/cjdns",
           external: true,
         }
       ],
@@ -224,7 +225,7 @@ export default {
         },
         {
           name: "header.blog",
-          route_link: "https://crypto.pkt.cash",
+          route_link: "https://thebetterwork.substack.com/",
           external: true,
         },
         {

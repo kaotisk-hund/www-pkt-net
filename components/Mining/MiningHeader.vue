@@ -12,7 +12,7 @@
         <nuxt-link to="/wallet" class="c-mining-header__button-link blue-btn-arrow">
           <span class="c-mining-header__button-btn">{{ $t("wallet.header_button") }}</span>
         </nuxt-link>
-        <a href="https://docs.pkt.cash/en/latest/mining/" class="c-mining-header__button-link blue-btn-arrow">
+        <a href="https://docs.pkt.net/en/latest/mining/" class="c-mining-header__button-link blue-btn-arrow">
           <span class="c-mining-header__button-btn">{{ $t("mining.header_button_2") }}</span>
         </a>
       </div>

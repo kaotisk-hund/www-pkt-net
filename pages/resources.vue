@@ -10,7 +10,7 @@
         button_2_link="#videos" 
         :button_3="this.$t('resources.heading_button_3')" 
         :button_4="this.$t('resources.heading_button_4')"
-        button_3_link="https://pkt.cash/PKT_Network_v1.0_2021.02.01.pdf"
+        button_3_link="https://pkt.net/PKT_Network_v1.0_2021.02.01.pdf"
         button_4_link="https://docsend.com/view/ayf5d3tz5rymn8fv"
         :button_5="this.$t('resources.heading_button_5')" 
         :button_6="this.$t('resources.heading_button_6')"
@@ -24,9 +24,9 @@
         <div class="v-resources-section__left">
           <h2 class="v-resources-section__title_small">{{ $t("resources.whitepapers_heading") }}</h2>
           <p class="v-resources-section__text">{{ $t("resources.whitepapers_text_1") }}</p>
-          <a href="https://pkt.cash/PKT_Network_v1.0_2021.02.01.pdf" target="_blank" class="v-resources-section__button"><span>{{ $t("resources.whitepapers_button_1") }}</span></a>
+          <a href="https://pkt.net/PKT_Network_v1.0_2021.02.01.pdf" target="_blank" class="v-resources-section__button"><span>{{ $t("resources.whitepapers_button_1") }}</span></a>
           <p class="v-resources-section__text">{{ $t("resources.whitepapers_text_2") }}</p>
-          <a href="https://pkt.cash/PacketCrypt-2020-09-04.pdf" target="_blank" class="v-resources-section__button"><span>{{ $t("resources.whitepapers_button_2") }}</span></a>
+          <a href="https://pkt.net/PacketCrypt-2020-09-04.pdf" target="_blank" class="v-resources-section__button"><span>{{ $t("resources.whitepapers_button_2") }}</span></a>
         </div>
       </div>
     </section>
@@ -35,12 +35,12 @@
         <div class="v-resources-section__left">
           <h2 class="v-resources-section__title_small">{{ $t("resources.documentation_title") }}</h2>
           <div class="v-resources-section__links">
-            <a href="https://docs.pkt.cash/en/latest/PKT_FAQ/" target="_blank" class="v-resources-section__button"><span>{{ $t("resources.documentation_cta_1") }}</span></a>
+            <a href="https://docs.pkt.net/en/latest/PKT_FAQ/" target="_blank" class="v-resources-section__button"><span>{{ $t("resources.documentation_cta_1") }}</span></a>
             <nuxt-link :to="localePath('mine')" class="v-resources-section__button"><span>{{ $t("resources.documentation_cta_2") }}</span></nuxt-link>
           </div>
           <div class="v-resources-section__links">
             <nuxt-link :to="localePath('wallet')" class="v-resources-section__button"><span>{{ $t("resources.documentation_cta_3") }}</span></nuxt-link>
-            <a href="https://docs.pkt.cash/en/latest/mining/pool_setup_guide/" target="_blank" class="v-resources-section__button"><span>{{ $t("resources.documentation_cta_4") }}</span></a>
+            <a href="https://docs.pkt.net/en/latest/mining/pool_setup_guide/" target="_blank" class="v-resources-section__button"><span>{{ $t("resources.documentation_cta_4") }}</span></a>
           </div>
           <div class="v-resources-section__links">
             <nuxt-link :to="localePath('getpkt')" class="v-resources-section__button"><span>{{ $t('resources.heading_button_5') }}</span></nuxt-link>
@@ -124,7 +124,7 @@ export default {
       link: [
         {
           rel: 'canonical',
-          href: 'https://pkt.cash' + this.$route.path
+          href: 'https://pkt.net' + this.$route.path
         }
       ]
     };

@@ -11,7 +11,7 @@
           <a href="#" class="c-wallet-options__item-link">{{ $t("wallet.option_01_descr") }}</a>
           <a
             class="c-wallet-options__item-btn blue-btn-arrow"
-            href="https://docs.pkt.cash/en/latest/pktd/pktwallet"
+            href="https://docs.pkt.net/en/latest/pktd/pktwallet"
             target="_blank">
             <span>{{ $t("wallet.option_01_button") }}</span>
           </a>
@@ -24,7 +24,7 @@
           <a href="#" class="c-wallet-options__item-link">{{ $t("wallet.option_02_descr") }}</a>
           <a
             class="c-wallet-options__item-btn blue-btn-arrow"
-            href="https://docs.pkt.cash/en/latest/electrum/"
+            href="https://docs.pkt.net/en/latest/electrum/"
             target="_blank">
             <span>{{ $t("wallet.option_02_button") }}</span>
           </a>

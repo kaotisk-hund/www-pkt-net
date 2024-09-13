@@ -36,22 +36,22 @@ export default {
         {
           link_icon: "/img/community-telegram.svg",
           link_title: this.$t("community.com_lnk_3"),
-          link_url: "https://t.me/pkt_cash",
+          link_url: "https://t.me/pkt_cash_community",
         },
         {
           link_icon: "/img/community-links-docs.svg",
           link_title: this.$t("community.com_lnk_2"),
-          link_url: "https://docs.pkt.cash/",
+          link_url: "https://docs.pkt.net/",
         },
-        {
-          link_icon: "/img/community-links-instagram.svg",
-          link_title: this.$t("community.com_lnk_4"),
-          link_url: "https://www.instagram.com/pktcash/",
-        },
+//        {
+//          link_icon: "/img/community-links-instagram.svg",
+//          link_title: this.$t("community.com_lnk_4"),
+//          link_url: "https://www.instagram.com/pktcash/",
+//        },
         {
           link_icon: "/img/community-links-github.svg",
           link_title: this.$t("community.com_lnk_5"),
-          link_url: "https://github.com/pkt-cash/",
+          link_url: "https://github.com/orgs/PKT-Net-Foundation/",
         }
       ],
       community_blocks: [
@@ -93,7 +93,7 @@ export default {
       link: [
         {
           rel: 'canonical',
-          href: 'https://pkt.cash' + this.$route.path
+          href: 'https://pkt.net' + this.$route.path
         }
       ]
     };

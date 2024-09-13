@@ -35,7 +35,7 @@ export default {
       link: [
         {
           rel: 'canonical',
-          href: 'https://pkt.cash' + this.$route.path
+          href: 'https://pkt.net' + this.$route.path
         }
       ]
     };
@@ -92,14 +92,14 @@ export default {
           img: "/img/wallet-command-line.png",
           title: "Command Line PKT Wallet",
           content: "Terminal-based mining wallet",
-          button_link: "https://docs.pkt.cash/en/latest/pktd/pktwallet/",
+          button_link: "https://docs.pkt.net/en/latest/pktd/pktwallet/",
           button_label: "Install CLI Wallet"
         },
         {
           img: "/img/wallet-electrum.png",
           title: "Electrum PKT Wallet",
           content: "Non-mining PKT wallet for Mac or PC",
-          button_link: "https://docs.pkt.cash/en/latest/electrum/",
+          button_link: "https://docs.pkt.net/en/latest/electrum/",
           button_label: "Install Electrum"
         },
       ],

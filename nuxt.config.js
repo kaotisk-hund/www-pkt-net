@@ -144,7 +144,7 @@ export default {
     langDir: './locales/'
   },
   sitemap: {
-    hostname: 'https://pkt.cash/',
+    hostname: 'https://pkt.net/',
     gzip: true,
   },
   /*

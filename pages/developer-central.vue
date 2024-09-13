@@ -7,7 +7,7 @@
       button_1="Get funding"
       button_2="Read docs"
       button_1_link="/network-steward"
-      button_2_link="https://docs.pkt.cash/"
+      button_2_link="https://docs.pkt.net/"
       button_2_target="_blank"  />
     </section>
     <section class="v-simple-section">
@@ -29,14 +29,14 @@
           <div class="v-block-links-section__single green_bg">
             <div><h3 class="v-block-links-section__title">Setup a PKT mining pool</h3>
             <p class="v-block-links-section__descr">PKT mining pools require skilled operators with substantial bandwidth and bare metal infrastructure.</p></div>
-            <a href="https://docs.pkt.cash/en/latest/mining/pool_setup_guide/" target="_blank" class="c-common-button c-common-button__bordered c-common-button__dark_blue"><span>Read docs</span></a>
+            <a href="https://docs.pkt.net/en/latest/mining/pool_setup_guide/" target="_blank" class="c-common-button c-common-button__bordered c-common-button__dark_blue"><span>Read docs</span></a>
           </div>
         </div>
         <div class="v-block-links-section__inner">
           <div class="v-block-links-section__single dark_blue_bg">
             <div><h3 class="v-block-links-section__title">Run a PKT FullNode</h3>
             <p class="v-block-links-section__descr">Each PKT FullNode validates the blocks and helps the wallets to receive and send PKT.</p></div>
-            <a href="https://docs.pkt.cash/en/latest/pktd/" target="_blank" class="c-common-button c-common-button__bordered c-common-button__dark_blue"><span>Install now</span></a>
+            <a href="https://docs.pkt.net/en/latest/pktd/" target="_blank" class="c-common-button c-common-button__bordered c-common-button__dark_blue"><span>Install now</span></a>
           </div>
           <div class="v-block-links-section__single grey_bg">
             <div><h3 class="v-block-links-section__title">PKT Lightning Network</h3>
@@ -46,7 +46,7 @@
           <div class="v-block-links-section__single rose_bg">
             <div><h3 class="v-block-links-section__title">Build a website in PKT Network</h3>
             <p class="v-block-links-section__descr">Get more information about building and hosting censorship-resistant websites in the PKT Network.</p></div>
-            <a href="https://docs.pkt.cash/en/latest/cjdns_websites/" target="_blank" class="c-common-button c-common-button__bordered c-common-button__dark_blue"><span>Learn more</span></a>
+            <a href="https://docs.pkt.net/en/latest/cjdns_websites/" target="_blank" class="c-common-button c-common-button__bordered c-common-button__dark_blue"><span>Learn more</span></a>
           </div>
         </div>
       </div>
@@ -84,7 +84,7 @@ export default {
       link: [
         {
           rel: 'canonical',
-          href: 'https://pkt.cash' + this.$route.path
+          href: 'https://pkt.net' + this.$route.path
         }
       ]
     };

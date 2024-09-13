@@ -83,7 +83,7 @@ export default {
           text_direction: "text_right",
           single_title: this.$t("pkt_cash.cash_chess_title_2"),
           single_descr: this.$t("pkt_cash.cash_chess_descr_2"),
-          single_url: "https://docs.pkt.cash/en/latest/cjdns_websites/",
+          single_url: "https://docs.pkt.net/en/latest/cjdns_websites/",
           external: true,
           single_link: this.$t("common.learn_more"),
           single_img: "/img/pkt-cash-2.webp",
@@ -92,7 +92,7 @@ export default {
           text_direction: "text_left",
           single_title: this.$t("pkt_cash.cash_chess_title_3"),
           single_descr: this.$t("pkt_cash.cash_chess_descr_3"),
-          single_url: "https://pkt.cash/PacketCrypt-2020-09-04.pdf",
+          single_url: "https://pkt.net/PacketCrypt-2020-09-04.pdf",
           external: true,
           single_link: this.$t("header_new.dev_yellowpaper"),
           single_img: "/img/pkt-cash-3.webp",
@@ -101,7 +101,7 @@ export default {
           text_direction: "text_right",
           single_title: this.$t("pkt_cash.cash_chess_title_4"),
           single_descr: this.$t("pkt_cash.cash_chess_descr_4"),
-          single_url: "https://pkt.cash/PKT_Network_v1.0_2021.02.01.pdf",
+          single_url: "https://pkt.net/PKT_Network_v1.0_2021.02.01.pdf",
           external: true,
           single_link: this.$t("common.learn_more"),
           single_img: "/img/pkt-cash-4.webp",
@@ -110,7 +110,7 @@ export default {
           text_direction: "text_left",
           single_title: this.$t("pkt_cash.cash_chess_title_5"),
           single_descr: this.$t("pkt_cash.cash_chess_descr_5"),
-          single_url: "https://pkt.cash/PKT_Network_v1.0_2021.02.01.pdf",
+          single_url: "https://pkt.net/PKT_Network_v1.0_2021.02.01.pdf",
           external: true,
           single_link: this.$t("header.whitepaper"),
           single_img: "/img/pkt-cash-1.webp",
@@ -168,7 +168,7 @@ export default {
       link: [
         {
           rel: 'canonical',
-          href: 'https://pkt.cash' + this.$route.path
+          href: 'https://pkt.net' + this.$route.path
         }
       ]
     };

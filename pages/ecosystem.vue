@@ -91,13 +91,13 @@ export default {
           descr:this.$t("ecosystem.eco_pr_new_3_descr"),
           project_link: "https://www.pkt.world/wallet"
         },
-        {
-          img_style:"background-color:#0D4AE7;",
-          img_url:"/img/ecosystem-new-routie.svg",
-          title:this.$t("ecosystem.eco_pr_new_4_title"),
-          descr:this.$t("ecosystem.eco_pr_new_4_descr"),
-          project_link: "https://routie.io/"
-        },
+//        {
+//          img_style:"background-color:#0D4AE7;",
+//          img_url:"/img/ecosystem-new-routie.svg",
+//          title:this.$t("ecosystem.eco_pr_new_4_title"),
+//          descr:this.$t("ecosystem.eco_pr_new_4_descr"),
+//          project_link: "https://routie.io/"
+//        },
         {
           img_style:"background-color:#2B3991;",
           img_url:"/img/ecosystem-new-anode.svg",
@@ -115,7 +115,7 @@ export default {
       ],
       projects_infra:  [
         {
-          projects_link: "https://docs.pkt.cash/en/latest/mining/pool_setup_guide/",
+          projects_link: "https://docs.pkt.net/en/latest/mining/pool_setup_guide/",
           img_url: "/img/ecosystem-zetahash.svg",
           title:this.$t("ecosystem.eco_pr_infra_1"),
           style: "background-color:#F43939;",
@@ -127,18 +127,18 @@ export default {
           style: "background-color:#3CADEF;",
         },
         {
-          projects_link: "https://docs.pkt.cash/en/latest/mining/pool_setup_guide/",
+          projects_link: "https://docs.pkt.net/en/latest/mining/pool_setup_guide/",
           img_url: "/img/ecosystem-new-pkt-pool.svg",
           title:this.$t("ecosystem.eco_pr_infra_3"),
           style: "background-color:#2F36A1;",
         },
-        {
-          projects_link: "https://github.com/pkteer",
-          img_url: "/img/ecosystem-pkteer.svg",
-          title:this.$t("ecosystem.eco_pr_infra_4"),
-          style: "background-color:#FFFFFF;",
-          img_style: "width:80px;",
-        },
+//        {
+//          projects_link: "https://github.com/pkteer",
+//          img_url: "/img/ecosystem-pkteer.svg",
+//          title:this.$t("ecosystem.eco_pr_infra_4"),
+//          style: "background-color:#FFFFFF;",
+//          img_style: "width:80px;",
+//        },
         {
           projects_link: "https://pkt.watch/minr/",
           img_url: "/img/ecosystem-new-minr.svg",
@@ -167,7 +167,7 @@ export default {
           img_style: "width:80px;",
         },
         {
-          projects_link: "https://exchange.pkt.net/",
+          projects_link: "https://pkt.net/",
           img_url: "/img/ecosystem-pktnet.svg",
           title:this.$t("ecosystem.eco_pr_payment_3"),
           style: "background-color:#FF9039;",
@@ -182,12 +182,12 @@ export default {
           style: "background-color:#FF007A;",
           img_style: "width:54px;",
         },
-        {
-          projects_link: "https://routie.io/",
-          img_url: "/img/ecosystem-new-routie.svg",
-          title:this.$t("ecosystem.eco_pr_cons_2"),
-          style: "background-color:#0D4AE7;",
-        },
+//        {
+//          projects_link: "https://routie.io/",
+//          img_url: "/img/ecosystem-new-routie.svg",
+//          title:this.$t("ecosystem.eco_pr_cons_2"),
+//          style: "background-color:#0D4AE7;",
+//        },
         {
           projects_link: "https://pkt.watch",
           img_url: "/img/ecosystem-pkt-watch.svg",
@@ -220,7 +220,7 @@ export default {
       link: [
         {
           rel: 'canonical',
-          href: 'https://pkt.cash' + this.$route.path
+          href: 'https://pkt.net' + this.$route.path
         }
       ]
     };

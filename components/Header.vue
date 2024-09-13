@@ -180,7 +180,7 @@ export default {
             // },
             {
               name:"header_new.dev_tech_docs",
-              route_link: "https://docs.pkt.cash/",
+              route_link: "https://docs.pkt.net/",
               external: true
             },
             {
@@ -193,12 +193,12 @@ export default {
             // },
             {
               name:"header_new.dev_yellowpaper",
-              route_link: "https://pkt.cash/PacketCrypt-2020-09-04.pdf",
+              route_link: "https://pkt.net/PacketCrypt-2020-09-04.pdf",
               external: true
             },
             {
               name:"header.whitepaper",
-              route_link: "https://pkt.cash/PKT_Network_v1.0_2021.02.01.pdf",
+              route_link: "https://pkt.net/PKT_Network_v1.0_2021.02.01.pdf",
               external: true
             },
           ]
@@ -250,7 +250,7 @@ export default {
             },
             {
               name:"header.blog",
-              route_link: "https://crypto.pkt.cash/",
+              route_link: "https://thebetterwork.substack.com/",
               external: true
             },
             {
@@ -261,34 +261,34 @@ export default {
         }
       ],
       social_links: [
-        {
-          name: "pkt.chat",
-          route_link: "https://pkt.chat",
-          img: "/img/common/icons/pkt-chat.svg",
-        },
-        {
-          name: "Youtube",
-          route_link: "https://www.youtube.com/c/PKTCash/",
-          img: "/img/common/icons/youtube.svg",
-        },
-        {
-          name: "Instagram",
-          route_link: "https://www.instagram.com/pktcash/",
-          img: "/img/common/icons/instagram.svg",
-        },
-        {
-          name: "Twitter",
-          route_link: "https://twitter.com/pktcash",
-          img: "/img/common/icons/x.svg",
-        },
+//        {
+//          name: "pkt.chat",
+//          route_link: "https://pkt.chat",
+//          img: "/img/common/icons/pkt-chat.svg",
+//        },
+//        {
+//          name: "Youtube",
+//          route_link: "https://www.youtube.com/c/PKTCash/",
+//          img: "/img/common/icons/youtube.svg",
+//        },
+//        {
+//          name: "Instagram",
+//          route_link: "https://www.instagram.com/pktcash/",
+//          img: "/img/common/icons/instagram.svg",
+//        },
+//        {
+//          name: "Twitter",
+//          route_link: "https://twitter.com/pktcash",
+//          img: "/img/common/icons/x.svg",
+//        },
         {
           name: "Discord",
-          route_link: "https://discord.gg/bjJutHm9CN",
+          route_link: "https://discord.gg/QVWsq5mGSz",
           img: "/img/common/icons/discord.svg",
         },
         {
           name: "Github",
-          route_link: "https://github.com/pkt-cash/",
+          route_link: "https://github.com/orgs/PKT-Net-Foundation/",
           img: "/img/common/icons/github.svg",
         }
       ],

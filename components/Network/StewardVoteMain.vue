@@ -26,7 +26,7 @@
             <p class="c-content-main__text">{{ $t("steward_vote.steward_vote_01_content_01") }}</p>
             <p class="c-content-main__text">{{ $t("steward_vote.steward_vote_01_content_02") }}</p>
             <p class="c-content-main__text">{{ $t("steward_vote.steward_vote_01_content_03") }}
-              <a href="https://explorer.pkt.cash/address/" target="_blank">https://explorer.pkt.cash/address/</a> {{ $t("steward_vote.steward_vote_01_content_04") }}
+              <a href="https://packetscan.io/address/" target="_blank">https://packetscan.io/address/</a> {{ $t("steward_vote.steward_vote_01_content_04") }}
               <b>0020d5c1005c0d4012d3ae2672319e7f9eb15a57516aeefabbbc062265f67e308f2</b>
             </p>
             <pre class="c-content-main__scroll">$ ./bin/pktctl getrawtransaction 505d2750577a3d3c739c2a650ec0e03a7ddb1f81080c820ab1a317575020745b 1
@@ -96,10 +96,10 @@
   "totalpossible": 21985819476623360
 }</pre>
             <p class="c-content-main__text">{{ $t("steward_vote.steward_vote_01_content_06") }}
-              <a href="https://explorer.pkt.cash/address/pGzmtW4Q2v4AWHcX8TYGqG5c1Eh5Ykg6fX" target="_blank">https://explorer.pkt.cash/address/pGzmtW4Q2v4AWHcX8TYGqG5c1Eh5Ykg6fX </a>,
+              <a href="https://packetscan.io/address/pGzmtW4Q2v4AWHcX8TYGqG5c1Eh5Ykg6fX" target="_blank">https://packetscan.io/address/pGzmtW4Q2v4AWHcX8TYGqG5c1Eh5Ykg6fX </a>,
               {{ $t("steward_vote.steward_vote_01_content_07") }}
               <a
-                href="https://explorer.pkt.cash/address/"
+                href="https://packetscan.io/address/"
                 target="_blank"
               >76a9147d9df4279212fd7def4c47abf2d5f3a6c6eaf4ae88ac</a>, {{ $t("steward_vote.steward_vote_01_content_08") }}
             </p>
@@ -113,11 +113,11 @@
             <p class="c-content-main__text">{{ $t("steward_vote.steward_vote_02_content_01") }}</p>
             <p class="c-content-main__text">
               {{ $t("steward_vote.steward_vote_02_content_02") }}
-              <a href="https://explorer.pkt.cash/address/pGzmtW4Q2v4AWHcX8TYGqG5c1Eh5Ykg6fX " target="_blank">https://explorer.pkt.cash/address/pGzmtW4Q2v4AWHcX8TYGqG5c1Eh5Ykg6fX </a> {{ $t("steward_vote.steward_vote_02_content_03") }}
+              <a href="https://packetscan.io/address/pGzmtW4Q2v4AWHcX8TYGqG5c1Eh5Ykg6fX " target="_blank">https://packetscan.io/address/pGzmtW4Q2v4AWHcX8TYGqG5c1Eh5Ykg6fX </a> {{ $t("steward_vote.steward_vote_02_content_03") }}
               <a
-                href="https://explorer.pkt.cash/address"
+                href="https://packetscan.io/address"
                 target="_blank"
-              >https://explorer.pkt.cash/address</a>, {{ $t("steward_vote.steward_vote_02_content_04") }}
+              >https://packetscan.io/address</a>, {{ $t("steward_vote.steward_vote_02_content_04") }}
             </p>
             <pre class="c-content-main__scroll">$ ./bin/pktctl --wallet getnetworkstewardvote
 {}

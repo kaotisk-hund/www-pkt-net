@@ -21,12 +21,12 @@
               <div class="v-introduction__papers_single yellow_bg">
                 <p>PacketCrypt</p>
                 <h4>Yellow Paper</h4>
-                <a href="https://pkt.cash/PacketCrypt-2020-09-04.pdf" target="_blank" class="c-common-button c-common-button__bordered c-common-button__dark_blue"><span>Read now</span></a>
+                <a href="https://pkt.net/PacketCrypt-2020-09-04.pdf" target="_blank" class="c-common-button c-common-button__bordered c-common-button__dark_blue"><span>Read now</span></a>
               </div>
               <div class="v-introduction__papers_single white_bg">
                 <p>PKT Network</p>
                 <h4>White Paper</h4>
-                <a href="https://pkt.cash/PKT_Network_v1.0_2021.02.01.pdf" target="_blank" class="c-common-button c-common-button__bordered c-common-button__dark_blue"><span>Read now</span></a>
+                <a href="https://pkt.net/PKT_Network_v1.0_2021.02.01.pdf" target="_blank" class="c-common-button c-common-button__bordered c-common-button__dark_blue"><span>Read now</span></a>
               </div>
             </div>
             <div class="v-introduction__chess">
@@ -480,7 +480,7 @@ export default {
       link: [
         {
           rel: 'canonical',
-          href: 'https://pkt.cash' + this.$route.path
+          href: 'https://pkt.net' + this.$route.path
         }
       ]
     };

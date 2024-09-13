@@ -25,7 +25,7 @@ export default {
       link: [
         {
           rel: 'canonical',
-          href: 'https://pkt.cash' + this.$route.path
+          href: 'https://pkt.net' + this.$route.path
         }
       ]
     };
@@ -38,7 +38,7 @@ export default {
           subTitle: this.$t("mining.adv_subtitle_1"),
           text:this.$t("mining.adv_text_1"),
           btnText: this.$t("setup.nav_04_link_01"),
-          btnLink: "https://docs.pkt.cash/en/latest/mining/",
+          btnLink: "https://docs.pkt.net/en/latest/mining/",
           img: "/img/advantage/mining-1.png",
           mobile_img: "/img/advantage/mining-1-mobile.png",
           aligh: false,
@@ -50,7 +50,7 @@ export default {
           subTitle: this.$t("mining.adv_subtitle_2"),
           text:this.$t("mining.adv_text_2"),
           btnText: this.$t("mining.adv_button_2"),
-          btnLink: "https://docs.pkt.cash/en/latest/mining/",
+          btnLink: "https://docs.pkt.net/en/latest/mining/",
           img: "/img/advantage/mining-2.png",
           mobile_img: "/img/advantage/mining-2-mobile.png",
           aligh: true,
@@ -62,7 +62,7 @@ export default {
           subTitle: this.$t("mining.adv_subtitle_3"),
           text:this.$t("mining.adv_text_3"),
           btnText: this.$t("mining.adv_button_2"),
-          btnLink: "https://docs.pkt.cash/en/latest/mining/",
+          btnLink: "https://docs.pkt.net/en/latest/mining/",
           img: "/img/advantage/mining-3.png",
           mobile_img: "/img/advantage/mining-3-mobile.png",
           aligh: false,

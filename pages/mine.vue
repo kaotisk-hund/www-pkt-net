@@ -9,7 +9,7 @@
       :button_3="this.$t('mine.mine_button_3')"
       button_1_link="/wallet"
       button_2_link="https://pkt.watch/minr/"
-      button_3_link="https://docs.pkt.cash/"
+      button_3_link="https://docs.pkt.net/"
       button_2_target="_blank"
       button_3_target="_blank" />
     </section>
@@ -28,7 +28,7 @@
             <!-- <nuxt-link class="c-common-button c-common-button__bordered c-common-button__dark_blue" to="/setup">
               <span>Get started</span>
             </nuxt-link> -->
-            <a href="https://docs.pkt.cash/en/latest/pktd/" target="_blank" class="c-common-button c-common-button__bordered c-common-button__dark_blue"><span>{{ $t("mine.mine_links_link_1") }}</span></a>
+            <a href="https://docs.pkt.net/en/latest/pktd/" target="_blank" class="c-common-button c-common-button__bordered c-common-button__dark_blue"><span>{{ $t("mine.mine_links_link_1") }}</span></a>
           </div>
           <div class="v-block-links-section__single green_bg">
             <div><h3 class="v-block-links-section__title">{{ $t("mine.mine_links_title_2") }}</h3>
@@ -40,12 +40,12 @@
           <div class="v-block-links-section__single orange_bg">
             <div><h3 class="v-block-links-section__title">{{ $t("mine.mine_links_title_3") }}</h3>
             <p class="v-block-links-section__descr">{{ $t("mine.mine_links_text_3") }}</p></div>
-            <a href="https://docs.pkt.cash/en/latest/mining/pool_setup_guide/" target="_blank" class="c-common-button c-common-button__bordered c-common-button__dark_blue"><span>{{ $t("mine.mine_links_link_3") }}</span></a>
+            <a href="https://docs.pkt.net/en/latest/mining/pool_setup_guide/" target="_blank" class="c-common-button c-common-button__bordered c-common-button__dark_blue"><span>{{ $t("mine.mine_links_link_3") }}</span></a>
           </div>
           <div class="v-block-links-section__single blue_bg">
             <div><h3 class="v-block-links-section__title">{{ $t("mine.mine_links_title_4") }}</h3>
             <p class="v-block-links-section__descr">{{ $t("mine.mine_links_text_4") }}</p></div>
-            <a href="https://docs.pkt.cash/en/latest/mining/" target="_blank" class="c-common-button c-common-button__bordered c-common-button__dark_blue"><span>{{ $t("mine.mine_links_link_4") }}</span></a>
+            <a href="https://docs.pkt.net/en/latest/mining/" target="_blank" class="c-common-button c-common-button__bordered c-common-button__dark_blue"><span>{{ $t("mine.mine_links_link_4") }}</span></a>
           </div>
         </div>
       </div>
@@ -81,7 +81,7 @@ export default {
           single_title: this.$t("mine.mine_chess_title_2"),
           single_subtitle: this.$t("mine.mine_chess_subtitle_2"),
           single_descr: this.$t("mine.mine_chess_descr_2"),
-          single_url: "https://docs.pkt.cash/en/latest/",
+          single_url: "https://docs.pkt.net/en/latest/",
           external: true,
           single_link: this.$t("mine.mine_links_link_4"),
           single_img: "/img/mine/mine-2.webp",
@@ -96,7 +96,7 @@ export default {
       link: [
         {
           rel: 'canonical',
-          href: 'https://pkt.cash' + this.$route.path
+          href: 'https://pkt.net' + this.$route.path
         }
       ]
     };

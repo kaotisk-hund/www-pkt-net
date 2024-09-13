@@ -7,7 +7,7 @@
       button_1="Install cjdns"
       button_2="Read docs"
       button_1_link="https://github.com/cjdelisle/cjdns"
-      button_2_link="https://docs.pkt.cash/"
+      button_2_link="https://docs.pkt.net/"
       button_1_target="_blank"
       button_2_target="_blank" />
     </section>
@@ -57,7 +57,7 @@ export default {
       link: [
         {
           rel: 'canonical',
-          href: 'https://pkt.cash' + this.$route.path
+          href: 'https://pkt.net' + this.$route.path
         }
       ]
     };

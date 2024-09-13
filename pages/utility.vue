@@ -89,7 +89,7 @@ export default {
           text_direction: "text_right",
           single_title: this.$t("utility.u_chess_title_3"),
           single_descr: this.$t("utility.u_chess_descr_3"),
-          single_url: "https://docs.pkt.cash/en/latest/cjdns_websites/",
+          single_url: "https://docs.pkt.net/en/latest/cjdns_websites/",
           external: true,
           single_link: this.$t("common.learn_more"),
           single_img: "/img/utility-3.webp",
@@ -155,7 +155,7 @@ export default {
       link: [
         {
           rel: 'canonical',
-          href: 'https://pkt.cash' + this.$route.path
+          href: 'https://pkt.net' + this.$route.path
         }
       ]
     };

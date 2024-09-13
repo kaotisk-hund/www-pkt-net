@@ -48,7 +48,7 @@ export default {
       link: [
         {
           rel: 'canonical',
-          href: 'https://pkt.cash' + this.$route.path
+          href: 'https://pkt.net' + this.$route.path
         }
       ]
     };
@@ -113,14 +113,14 @@ export default {
           heading: "PKT Mining Wallet",
           title: "Command Line PKT Wallet",
           content: "This terminal-based wallet is a full node setup",
-          button_link: "https://docs.pkt.cash/en/latest/pktd/pktwallet/",
+          button_link: "https://docs.pkt.net/en/latest/pktd/pktwallet/",
         },
         {
           bg_color: "background-color:#FD9D2D;background-image:url(/img/wallets-wallet-metamask.svg);background-size:30%;",
           heading: "WPKT Wallet",
           title: "WPKT MetaMask",
           content: "Use this wallet for WPKT only on web browser and mobile",
-          button_link: "https://docs.pkt.cash/en/latest/wrapped_pkt/",
+          button_link: "https://docs.pkt.net/en/latest/wrapped_pkt/",
         },
       ],
     };

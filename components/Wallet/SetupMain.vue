@@ -53,7 +53,7 @@ transactions, height 843, 2019-08-16 05:56:50 +0000 UTC)</pre>
             <p class="c-content-main__text">{{ $t("wallet.launch_text_03") }}</p>
             <pre class="c-content-main__scroll">./bin/pktctl getinfo</pre>
             <p class="c-content-main__text">{{ $t("wallet.launch_text_04") }}
-              <a href="https://explorer.pkt.cash" target="_blank">{{ $t("wallet.launch_text_04_link") }}</a> {{ $t("wallet.launch_text_04_01") }}
+              <a href="https://packetscan.io" target="_blank">{{ $t("wallet.launch_text_04_link") }}</a> {{ $t("wallet.launch_text_04_01") }}
             </p>
           </div>
           <!-- // Item 4 -->

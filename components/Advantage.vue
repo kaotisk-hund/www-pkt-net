@@ -39,7 +39,7 @@
             <div class="c-advantage__btn-wrapper">
               <template v-if="is_index && !item.linkMore">
                 <a
-                  href="https://github.com/pkt-cash/ns-projects"
+                  href="https://github.com/orgs/PKT-Net-Foundation/ns-projects"
                   target="_blank"
                   class="c-advantage__link blue-btn-arrow"
                   v-if="item.btnText && !item.linkMor"
